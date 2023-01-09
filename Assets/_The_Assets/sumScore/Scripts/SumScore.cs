@@ -19,7 +19,7 @@ public class SumScore {
     /// </remarks>
     /// <param name="pointsToAdd">Number of points to add</param>
     public static void Add (int pointsToAdd) {
-        Debug.Log(pointsToAdd + " points " + ((pointsToAdd > 0) ? "added" : "removed"));
+        //Debug.Log(pointsToAdd + " points " + ((pointsToAdd > 0) ? "added" : "removed"));
         Score += pointsToAdd; // Add points to current score
         if (MgrSet()) {
             // Make sure we don't go negative unless we're supposed to

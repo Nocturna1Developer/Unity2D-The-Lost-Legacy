@@ -37,12 +37,12 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         healthSystem.OnDead += HealthSystem_OnDead;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if(UnityEngine.Input.GetButtonDown("Jump")) 
         {
-            Debug.Log("this is being called");
-            _screenShakeInstance = CameraShakerHandler.Shake(_jumpShakeData);
+            //Debug.Log("this is being called");
+            //_screenShakeInstance = CameraShakerHandler.Shake(_jumpShakeData);
         }
         else
         {
@@ -87,7 +87,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         switch(other.gameObject.tag)
         {
             case "Coin":
-                Debug.Log("TOUCHED"); 
+                //Debug.Log("TOUCHED"); 
                 SumScore.Add(_coinValue);
                 _coinParticleSystem.Play();
                 _coinSound.Play();
