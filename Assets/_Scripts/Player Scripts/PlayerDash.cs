@@ -27,24 +27,28 @@ namespace TarodevController
         [Header("Audio Properties")]
         [SerializeField] private AudioSource _dashSound;
 
+        [Header("Particle Properties")]
+        [SerializeField] private ParticleSystem _dashParticleSystem;
+
         void Awake() => _player = GetComponentInParent<IPlayerController>();
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Mouse0) && canDash)
             {
                 StartCoroutine(Dash());
-                //_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+                _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
                 _dashSound.Play();
+                _dashParticleSystem.Play();
             }
 
             Flip();
         }
 
-        // private void FixedUpdate()
-        // {
-        //     if (isDashing) return;
-        // }
+        private void FixedUpdate()
+        {
+            if (isDashing) return;
+        }
 
         private void Flip()
         {
@@ -63,7 +67,7 @@ namespace TarodevController
 
             float originalGravity = rb.gravityScale; // turning of gravity during dash
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f); // direction player is facing
+            rb.velocity = new Vector2(transform.localScale.x * dashingPower * Time.deltaTime, 0f); // direction player is facing
 
             yield return new WaitForSeconds(dashingTime);
             rb.gravityScale = originalGravity;

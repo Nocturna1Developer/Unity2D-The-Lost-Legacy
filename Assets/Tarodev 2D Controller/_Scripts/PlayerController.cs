@@ -11,9 +11,6 @@ namespace TarodevController {
     /// If you hve any questions or would like to brag about your score, come to discord: https://discord.gg/GqeHHnhHpz
     /// </summary>
     public class PlayerController : MonoBehaviour, IPlayerController {
-        
-        //private Vector3                    _playerLook;
-
         // Public for external hooks
         public Vector3 Velocity { get; private set; }
         public FrameInput Input { get; private set; }
@@ -46,6 +43,7 @@ namespace TarodevController {
 
             MoveCharacter(); // Actually perform the axis movement
         }
+
 
         #region Gather Input
 
@@ -211,7 +209,6 @@ namespace TarodevController {
         [SerializeField] private float _coyoteTimeThreshold = 0.1f;
         [SerializeField] private float _jumpBuffer = 0.1f;
         [SerializeField] private float _jumpEndEarlyGravityModifier = 3;
-        private bool doubleJump;
         private bool _coyoteUsable;
         private bool _endedJumpEarly = true;
         private float _apexPoint; // Becomes 1 at the apex of a jump
@@ -231,12 +228,6 @@ namespace TarodevController {
         }
 
         private void CalculateJump() {
-            
-            // if (Input.JumpDown)
-            // {
-            //     doubleJump = false;
-            // }
-
             // Jump if: grounded or within coyote threshold || sufficient jump buffer
             if (Input.JumpDown && CanUseCoyote || HasBufferedJump) {
                 _currentVerticalSpeed = _jumpHeight;
@@ -244,7 +235,6 @@ namespace TarodevController {
                 _coyoteUsable = false;
                 _timeLeftGrounded = float.MinValue;
                 JumpingThisFrame = true;
-                //doubleJump = !doubleJump;
             }
             else {
                 JumpingThisFrame = false;
