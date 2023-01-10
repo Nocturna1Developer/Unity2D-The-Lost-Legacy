@@ -1,9 +1,10 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
+﻿
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class dg_simpleCamFollow : MonoBehaviour
-{
+{ 
     public Transform target;
     [Range(0f,40f)] public float laziness = 10f;
     public bool lookAtTarget = true;

@@ -6,59 +6,62 @@ public class SoundManager : MonoBehaviour {
 
     public static SoundManager instance;
 
+    //[SerializeField]
+    //private AudioSource hookGrab_Gold_FX, hookGrab_Stone_FX, playerLaugh_FX,
+        //pullSoundFX, ropeStretchFX, timeRunningOut_FX, gameEnd_FX;
+
     [SerializeField]
-    private AudioSource hookGrab_Gold_FX, hookGrab_Stone_FX, playerLaugh_FX,
-        pullSoundFX, ropeStretchFX, timeRunningOut_FX, gameEnd_FX;
+    private AudioSource timeRunningOut_FX, gameEnd_FX;
 
     void Awake() {
         if (instance == null)
             instance = this;
     }
 
-    public void HookGrab_Gold() {
-        hookGrab_Gold_FX.Play();
-    }
+    // public void HookGrab_Gold() {
+    //     hookGrab_Gold_FX.Play();
+    // }
 
-    public void HookGrab_Stone() {
-        hookGrab_Stone_FX.Play();
-    }
+    // public void HookGrab_Stone() {
+    //     hookGrab_Stone_FX.Play();
+    // }
 
-    public void PlayerLaugh() {
-        playerLaugh_FX.Play();
-    }
+    // public void PlayerLaugh() {
+    //     playerLaugh_FX.Play();
+    // }
 
-    public void RopeStretch(bool playFX) { 
+    // public void RopeStretch(bool playFX) { 
 
-        if(playFX) { 
+    //     if(playFX) { 
         
-            if(!ropeStretchFX.isPlaying) {
-                ropeStretchFX.Play();
-            }
+    //         if(!ropeStretchFX.isPlaying) {
+    //             ropeStretchFX.Play();
+    //         }
 
-        } else {
+    //     } else {
 
-            if (ropeStretchFX.isPlaying) {
-                ropeStretchFX.Stop();
-            }
+    //         if (ropeStretchFX.isPlaying) {
+    //             ropeStretchFX.Stop();
+    //         }
 
-        }
-    }
+    //     }
+    // }
 
-    public void PullSound(bool playFX) { 
+    // public void PullSound(bool playFX) { 
 
-        if(playFX) { 
+    //     if(playFX) { 
         
-            if(!pullSoundFX.isPlaying) {
-                pullSoundFX.Play();
-            }
+    //         if(!pullSoundFX.isPlaying) {
+    //             pullSoundFX.Play();
+    //         }
 
-        } else {
+    //     } else {
 
-            if (pullSoundFX.isPlaying) {
-                pullSoundFX.Stop();
-            }
-        }
-    }
+    //         if (pullSoundFX.isPlaying) {
+    //             pullSoundFX.Stop();
+    //         }
+    //     }
+    // }
 
     public void TimeRunningOut(bool playFX) {
 
@@ -81,8 +84,7 @@ public class SoundManager : MonoBehaviour {
     public void GameEnd() {
         gameEnd_FX.Play();
     }
-
-} // class
+} 
 
 
 

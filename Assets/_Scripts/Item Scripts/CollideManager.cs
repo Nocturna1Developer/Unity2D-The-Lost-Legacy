@@ -13,6 +13,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     [SerializeField] private int _enemyDamage = 30;
     [SerializeField] private GameObject _playerBody;
     //[SerializeField] private PlayerController _playerController;
+    [SerializeField] private RectTransform _faderImage;
 
     [Header("Camera Properties")]
     [SerializeField] private ShakeData _screenShakeData = null;
@@ -35,6 +36,12 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     {
         healthSystem = new HealthSystem(100);
         healthSystem.OnDead += HealthSystem_OnDead;
+
+        _faderImage.gameObject.SetActive(true);
+        LeanTween.alpha(_faderImage, 1, 0);
+        LeanTween.alpha(_faderImage, 0, 2f).setOnComplete(() => {
+            _faderImage.gameObject.SetActive(false);
+        });
     }
 
     private void FixedUpdate()
@@ -60,7 +67,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         _deathSound.Play();
         _playerBody.SetActive(false);
         //_playerController.enabled = false;
-        StartCoroutine(RestartLevelAfterDelay(0.5f));
+        StartCoroutine(RestartLevelAfterDelay(1f));
         _damageParticleSystem.Play();
 
         _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
@@ -71,17 +78,11 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         _damageParticleSystem.Play();
     }
 
-    private IEnumerator RestartLevelAfterDelay(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(SumScore.Score > _maxScore)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            StartCoroutine(LoadNextlevelAfterDelay(1f));
         }
 
         switch(other.gameObject.tag)
@@ -108,9 +109,22 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 break;
             
             case "Death":
-                StartCoroutine(RestartLevelAfterDelay(0.5f));
+                _playerBody.SetActive(false);
+                StartCoroutine(RestartLevelAfterDelay(1f));
                 break;
         }
+    }
+
+    private IEnumerator RestartLevelAfterDelay(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public IEnumerator LoadNextlevelAfterDelay(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
 

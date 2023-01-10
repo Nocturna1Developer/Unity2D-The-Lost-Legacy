@@ -16,33 +16,35 @@ namespace TarodevController
         [Header("Dash Properties")]
         private bool canDash = true;
         private bool isDashing;
-        [SerializeField] private float dashingPower = 10f;
-        [SerializeField] private float dashingTime = 0.1f;
+        [SerializeField] private float dashingPower = 24f;
+        [SerializeField] private float dashingTime = 1f;
         [SerializeField] private float dashingCooldown = 1f;
 
         [Header("Camera Properties")]
         [SerializeField] private ShakeData _screenShakeData = null;
         private ShakerInstance             _screenShakeInstance;
-        
+
+        [Header("Audio Properties")]
+        [SerializeField] private AudioSource _dashSound;
+
         void Awake() => _player = GetComponentInParent<IPlayerController>();
 
-        private void Update()
+        private void FixedUpdate()
         {
-            if (isDashing) return;
-
             if (Input.GetKeyDown(KeyCode.Mouse0) && canDash)
             {
                 StartCoroutine(Dash());
-                _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+                //_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+                _dashSound.Play();
             }
 
             Flip();
         }
 
-        private void FixedUpdate()
-        {
-            if (isDashing) return;
-        }
+        // private void FixedUpdate()
+        // {
+        //     if (isDashing) return;
+        // }
 
         private void Flip()
         {
@@ -51,14 +53,7 @@ namespace TarodevController
                 transform.localScale = new Vector3(_player.Input.X > 0 ? 1 : -1, 1, 1);
                 isFacingRight = !isFacingRight;
             }
-            
-            // if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
-            // {
-            //     Vector3 localScale = transform.localScale;
-            //     isFacingRight = !isFacingRight;
-            //     localScale.x *= -1f;
-            //     transform.localScale = localScale;
-            // }
+
         }
 
         private IEnumerator Dash()
