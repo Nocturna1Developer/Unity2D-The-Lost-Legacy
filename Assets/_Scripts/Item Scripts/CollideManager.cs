@@ -41,8 +41,8 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         healthSystem = new HealthSystem(100);
 
         healthSystem.OnDead += HealthSystem_OnDead;
-        //healthSystem.OnDamaged += HealthSystem_OnDamaged;
-        //healthSystem.OnHealed += HealthSystem_OnHealed;
+        healthSystem.OnDamaged += HealthSystem_OnDamaged;
+        healthSystem.OnHealed += HealthSystem_OnHealed;
     }
 
     private void Start()
@@ -70,14 +70,14 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
     }
 
-    // private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
-    // {
-    //     _damageParticleSystem.Play();
-    // }
+    private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
+    {
+        _damageParticleSystem.Play();
+    }
 
-    // private void HealthSystem_OnHealed(object sender, System.EventArgs e) {
-    //     _healParticleSystem.Play();
-    // }
+    private void HealthSystem_OnHealed(object sender, System.EventArgs e) {
+        _healParticleSystem.Play();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -103,7 +103,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             
             case "Fungus":
                 _hurtSound.Play();
-                healthSystem.Damage(100f);
+                healthSystem.Damage(15f);
                 _damageParticleSystem.Play();
                 _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
                 break;
