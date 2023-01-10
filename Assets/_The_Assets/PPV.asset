@@ -1370,7 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
   m_Name: AutoExposure
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   enabled:
     overrideState: 1
     value: 1
@@ -1411,36 +1411,7 @@ MonoBehaviour:
   - {fileID: 8615952644997634908}
   - {fileID: -1537948214179835156}
   - {fileID: -3187238494298651057}
-  - {fileID: 591268717363977829}
   - {fileID: -8532820692353947803}
---- !u!114 &591268717363977829
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
-  m_Name: Grain
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  colored:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 0.75
-  size:
-    overrideState: 1
-    value: 0.43
-  lumContrib:
-    overrideState: 1
-    value: 0.5
 --- !u!114 &8615952644997634908
 MonoBehaviour:
   m_ObjectHideFlags: 3
