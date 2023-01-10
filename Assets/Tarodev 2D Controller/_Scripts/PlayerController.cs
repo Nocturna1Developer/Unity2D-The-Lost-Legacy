@@ -12,7 +12,7 @@ namespace TarodevController {
     /// if there's enough interest. You can play and compete for best times here: https://tarodev.itch.io/
     /// If you hve any questions or would like to brag about your score, come to discord: https://discord.gg/GqeHHnhHpz
     /// </summary>
-    public class PlayerController : MonoBehaviour, IPlayerController, IGetHealthSystem  {
+    public class PlayerController : MonoBehaviour, IPlayerController {
         // Public for external hooks
         public Vector3 Velocity { get; private set; }
         public FrameInput Input { get; private set; }
@@ -24,22 +24,22 @@ namespace TarodevController {
         private Vector3 _lastPosition;
         private float _currentHorizontalSpeed, _currentVerticalSpeed;
 
-        [Header("Core Properties")]
-        private HealthSystem healthSystem;
+        //[Header("Core Properties")]
+        //private HealthSystem healthSystem;
 
         // This is horrible, but for some reason colliders are not fully established when update starts...
         private bool _active;
-        
+
         void Awake()  
         {
-            healthSystem = new HealthSystem(100);
+            //healthSystem = new HealthSystem(100);
             Invoke(nameof(Activate), 0.5f); 
         }
 
-        public HealthSystem GetHealthSystem()
-        {
-            return healthSystem;
-        }
+        //public HealthSystem GetHealthSystem()
+        //{
+           //return healthSystem;
+        //}
 
         void Activate() =>  _active = true;
 

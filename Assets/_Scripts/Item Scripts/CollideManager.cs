@@ -9,9 +9,9 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     [Header("Core Properties")]
     [SerializeField] private int _coinValue = 30;
     [SerializeField] private int _maxScore = 150;
-    [SerializeField] private int _fungusDamage = 15;
-    [SerializeField] private int _enemyDamage = 30;
-    [SerializeField] private int _healAmount = 15;
+    [SerializeField] private float _fungusDamage = 15f;
+    [SerializeField] private float _enemyDamage = 30f;
+    [SerializeField] private float _healAmount = 15f;
 
     [SerializeField] private GameObject _playerBody;
     //[SerializeField] private PlayerController _playerController;
@@ -41,8 +41,8 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         healthSystem = new HealthSystem(100);
 
         healthSystem.OnDead += HealthSystem_OnDead;
-        healthSystem.OnDamaged += HealthSystem_OnDamaged;
-        healthSystem.OnHealed += HealthSystem_OnHealed;
+        //healthSystem.OnDamaged += HealthSystem_OnDamaged;
+        //healthSystem.OnHealed += HealthSystem_OnHealed;
     }
 
     private void Start()
@@ -54,7 +54,8 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         });
     }
 
-    public HealthSystem GetHealthSystem() {
+    public HealthSystem GetHealthSystem()
+    {
         return healthSystem;
     }
 
@@ -69,14 +70,14 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
     }
 
-    private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
-    {
-        _damageParticleSystem.Play();
-    }
+    // private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
+    // {
+    //     _damageParticleSystem.Play();
+    // }
 
-    private void HealthSystem_OnHealed(object sender, System.EventArgs e) {
-        _healParticleSystem.Play();
-    }
+    // private void HealthSystem_OnHealed(object sender, System.EventArgs e) {
+    //     _healParticleSystem.Play();
+    // }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -102,7 +103,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             
             case "Fungus":
                 _hurtSound.Play();
-                healthSystem.Damage(_fungusDamage);
+                healthSystem.Damage(100f);
                 _damageParticleSystem.Play();
                 _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
                 break;
@@ -111,7 +112,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 _healSound.Play();
                 healthSystem.Heal(_healAmount);
                 _healParticleSystem.Play();
-                _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+                //_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
                 break;
             
             case "Death":
