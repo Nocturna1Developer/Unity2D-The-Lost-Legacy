@@ -16,6 +16,7 @@ TagManager:
   - Coin
   - Death
   - Enemy
+  - Heal
   layers:
   - Default
   - TransparentFX

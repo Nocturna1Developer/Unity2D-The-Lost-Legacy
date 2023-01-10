@@ -1,0 +1,1783 @@
+fileFormatVersion: 2
+guid: d7d16899d9581ae42a3f9285bd95fb4b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -849530701772993054
+    second: Potions 64x64 OUTLINE white CYAN_0
+  - first:
+      213: 417638242445374221
+    second: Potions 64x64 OUTLINE white CYAN_1
+  - first:
+      213: -3120364836690841138
+    second: Potions 64x64 OUTLINE white CYAN_2
+  - first:
+      213: -46412036473457889
+    second: Potions 64x64 OUTLINE white CYAN_3
+  - first:
+      213: -2945731195282617597
+    second: Potions 64x64 OUTLINE white CYAN_4
+  - first:
+      213: 3098764749240196465
+    second: Potions 64x64 OUTLINE white CYAN_5
+  - first:
+      213: -6977670394924460579
+    second: Potions 64x64 OUTLINE white CYAN_6
+  - first:
+      213: 1557953013454610371
+    second: Potions 64x64 OUTLINE white CYAN_7
+  - first:
+      213: -2121747313792210698
+    second: Potions 64x64 OUTLINE white CYAN_8
+  - first:
+      213: -8686709472678589586
+    second: Potions 64x64 OUTLINE white CYAN_9
+  - first:
+      213: -9104775991894015437
+    second: Potions 64x64 OUTLINE white CYAN_10
+  - first:
+      213: 4614789407014215830
+    second: Potions 64x64 OUTLINE white CYAN_11
+  - first:
+      213: 6383817077129564092
+    second: Potions 64x64 OUTLINE white CYAN_12
+  - first:
+      213: 2643814579059321009
+    second: Potions 64x64 OUTLINE white CYAN_13
+  - first:
+      213: -7720496100471026650
+    second: Potions 64x64 OUTLINE white CYAN_14
+  - first:
+      213: -4158092882507936775
+    second: Potions 64x64 OUTLINE white CYAN_15
+  - first:
+      213: 6407448407213610954
+    second: Potions 64x64 OUTLINE white CYAN_16
+  - first:
+      213: 2070665491280769217
+    second: Potions 64x64 OUTLINE white CYAN_17
+  - first:
+      213: -5527370124517099735
+    second: Potions 64x64 OUTLINE white CYAN_18
+  - first:
+      213: 2072753346855503372
+    second: Potions 64x64 OUTLINE white CYAN_19
+  - first:
+      213: 1052142526413972994
+    second: Potions 64x64 OUTLINE white CYAN_20
+  - first:
+      213: 372345525848184683
+    second: Potions 64x64 OUTLINE white CYAN_21
+  - first:
+      213: -2201407397853074703
+    second: Potions 64x64 OUTLINE white CYAN_22
+  - first:
+      213: -2657176045552454543
+    second: Potions 64x64 OUTLINE white CYAN_23
+  - first:
+      213: 3461156297901762794
+    second: Potions 64x64 OUTLINE white CYAN_24
+  - first:
+      213: 4837263470646274434
+    second: Potions 64x64 OUTLINE white CYAN_25
+  - first:
+      213: -3203241138496539482
+    second: Potions 64x64 OUTLINE white CYAN_26
+  - first:
+      213: 2376619559769516140
+    second: Potions 64x64 OUTLINE white CYAN_27
+  - first:
+      213: 9111961270413510999
+    second: Potions 64x64 OUTLINE white CYAN_28
+  - first:
+      213: 2299096626629464515
+    second: Potions 64x64 OUTLINE white CYAN_29
+  - first:
+      213: -2052628236278004209
+    second: Potions 64x64 OUTLINE white CYAN_30
+  - first:
+      213: -4846662777222225277
+    second: Potions 64x64 OUTLINE white CYAN_31
+  - first:
+      213: 4814459034050904501
+    second: Potions 64x64 OUTLINE white CYAN_32
+  - first:
+      213: -2087135377947186535
+    second: Potions 64x64 OUTLINE white CYAN_33
+  - first:
+      213: -7622948518206789106
+    second: Potions 64x64 OUTLINE white CYAN_34
+  - first:
+      213: 8309168847653894809
+    second: Potions 64x64 OUTLINE white CYAN_35
+  - first:
+      213: -1981578703259333734
+    second: Potions 64x64 OUTLINE white CYAN_36
+  - first:
+      213: -6507948105824366031
+    second: Potions 64x64 OUTLINE white CYAN_37
+  - first:
+      213: 716126669599558575
+    second: Potions 64x64 OUTLINE white CYAN_38
+  - first:
+      213: 8852621711501054284
+    second: Potions 64x64 OUTLINE white CYAN_39
+  - first:
+      213: 6301123278084100469
+    second: Potions 64x64 OUTLINE white CYAN_40
+  - first:
+      213: -8432816721905600211
+    second: Potions 64x64 OUTLINE white CYAN_41
+  - first:
+      213: -638305079370289809
+    second: Potions 64x64 OUTLINE white CYAN_42
+  - first:
+      213: 7397456292839527968
+    second: Potions 64x64 OUTLINE white CYAN_43
+  - first:
+      213: -1827319613602962947
+    second: Potions 64x64 OUTLINE white CYAN_44
+  - first:
+      213: 839193963619396041
+    second: Potions 64x64 OUTLINE white CYAN_45
+  - first:
+      213: 7524219479701249604
+    second: Potions 64x64 OUTLINE white CYAN_46
+  - first:
+      213: -1061869615591543718
+    second: Potions 64x64 OUTLINE white CYAN_47
+  - first:
+      213: 530725803534107701
+    second: Potions 64x64 OUTLINE white CYAN_48
+  - first:
+      213: 3107225469723267590
+    second: Potions 64x64 OUTLINE white CYAN_49
+  - first:
+      213: 6431243248741343291
+    second: Potions 64x64 OUTLINE white CYAN_50
+  - first:
+      213: 3603923094952752980
+    second: Potions 64x64 OUTLINE white CYAN_51
+  - first:
+      213: -9114756279494428814
+    second: Potions 64x64 OUTLINE white CYAN_52
+  - first:
+      213: -5276944251770513699
+    second: Potions 64x64 OUTLINE white CYAN_53
+  - first:
+      213: 471581220629401226
+    second: Potions 64x64 OUTLINE white CYAN_54
+  - first:
+      213: 7199280751097386977
+    second: Potions 64x64 OUTLINE white CYAN_55
+  - first:
+      213: 1752250975563160683
+    second: Potions 64x64 OUTLINE white CYAN_56
+  - first:
+      213: 3738474816488223461
+    second: Potions 64x64 OUTLINE white CYAN_57
+  - first:
+      213: 9033176222201302648
+    second: Potions 64x64 OUTLINE white CYAN_58
+  - first:
+      213: -6741105875972643581
+    second: Potions 64x64 OUTLINE white CYAN_59
+  - first:
+      213: 5170496140805573293
+    second: Potions 64x64 OUTLINE white CYAN_60
+  - first:
+      213: 8870119075877018343
+    second: Potions 64x64 OUTLINE white CYAN_61
+  - first:
+      213: -3533704695673348978
+    second: Potions 64x64 OUTLINE white CYAN_62
+  - first:
+      213: 1273849748936323107
+    second: Potions 64x64 OUTLINE white CYAN_63
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed4807e35cd534f0800000000000000
+      internalID: -849530701772993054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03339dc4cfbbc500800000000000000
+      internalID: 417638242445374221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec13c63a6bc32b4d0800000000000000
+      internalID: -3120364836690841138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1372bcaf7c1b5ff0800000000000000
+      internalID: -46412036473457889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b8465c519ae17d0800000000000000
+      internalID: -2945731195282617597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17dd6f81f16010b20800000000000000
+      internalID: 3098764749240196465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd594cebeb55a2f90800000000000000
+      internalID: -6977670394924460579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf16b7e206fe9510800000000000000
+      internalID: 1557953013454610371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8a6424f0a0e82e0800000000000000
+      internalID: -2121747313792210698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bc8fd32cb927780800000000000000
+      internalID: -8686709472678589586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33207ab797655a180800000000000000
+      internalID: -9104775991894015437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6906156f3860b0040800000000000000
+      internalID: 4614789407014215830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf41690fcfd79850800000000000000
+      internalID: 6383817077129564092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b864d42a57b0b420800000000000000
+      internalID: 2643814579059321009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cc2a993b94bd490800000000000000
+      internalID: -7720496100471026650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbc80bcd8c7b46c0800000000000000
+      internalID: -4158092882507936775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac71c94d064dbe850800000000000000
+      internalID: 6407448407213610954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c033702b4b7cbc10800000000000000
+      internalID: 2070665491280769217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9273d023826da43b0800000000000000
+      internalID: -5527370124517099735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c060352ef26e3cc10800000000000000
+      internalID: 2072753346855503372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206acf3ad06f99e00800000000000000
+      internalID: 1052142526413972994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6713e17846da2500800000000000000
+      internalID: 372345525848184683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1faec0d92a70371e0800000000000000
+      internalID: -2201407397853074703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1743b230770df1bd0800000000000000
+      internalID: -2657176045552454543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae86a80a05f780030800000000000000
+      internalID: 3461156297901762794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28928d46f79612340800000000000000
+      internalID: 4837263470646274434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4fef1f72dcb83d0800000000000000
+      internalID: -3203241138496539482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68ae42d5e27bf020800000000000000
+      internalID: 2376619559769516140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7594d1a8f70347e70800000000000000
+      internalID: 9111961270413510999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_29
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c15c86633808ef10800000000000000
+      internalID: 2299096626629464515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_30
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0686b09e799383e0800000000000000
+      internalID: -2052628236278004209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382af8102e13dbcb0800000000000000
+      internalID: -4846662777222225277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1464ebbf460d240800000000000000
+      internalID: 4814459034050904501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aae4f8e610903e0800000000000000
+      internalID: -2087135377947186535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0aa137f5b8d53690800000000000000
+      internalID: -7622948518206789106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99af6270b09105370800000000000000
+      internalID: 8309168847653894809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b8fb11ba40084e0800000000000000
+      internalID: -1981578703259333734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13299a7adaf1fa5a0800000000000000
+      internalID: -6507948105824366031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab4aab696130f900800000000000000
+      internalID: 716126669599558575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c415eec1b84dada70800000000000000
+      internalID: 8852621711501054284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571d5249c36127750800000000000000
+      internalID: 6301123278084100469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29b7d2dedd98fa80800000000000000
+      internalID: -8432816721905600211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d6ec589e84427f0800000000000000
+      internalID: -638305079370289809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0269d201e4b09a660800000000000000
+      internalID: 7397456292839527968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df167143e7e04a6e0800000000000000
+      internalID: -1827319613602962947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_45
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9af23b67a65ab00800000000000000
+      internalID: 839193963619396041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44edaa370c56b6860800000000000000
+      internalID: 7524219479701249604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_47
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ca2ece53b7341f0800000000000000
+      internalID: -1061869615591543718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534c8c07e448d5700800000000000000
+      internalID: 530725803534107701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602d6e71a151f1b20800000000000000
+      internalID: 3107225469723267590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b306b5919ad504950800000000000000
+      internalID: 6431243248741343291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4573c70e5f4b30230800000000000000
+      internalID: 3603923094952752980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2773972b471e18180800000000000000
+      internalID: -9114756279494428814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6dda5592784c6b0800000000000000
+      internalID: -5276944251770513699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e4c522f946b8600800000000000000
+      internalID: 471581220629401226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7977f13bbf8e360800000000000000
+      internalID: 7199280751097386977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c16cb7afe315810800000000000000
+      internalID: 1752250975563160683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2368ec90bb1e330800000000000000
+      internalID: 3738474816488223461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e40dd0ae94c5d70800000000000000
+      internalID: 9033176222201302648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3052a55fbe7c272a0800000000000000
+      internalID: -6741105875972643581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_60
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa8e3978da41c740800000000000000
+      internalID: 5170496140805573293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ead019bd4ef81b70800000000000000
+      internalID: 8870119075877018343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c92493d42c5fec0800000000000000
+      internalID: -3533704695673348978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potions 64x64 OUTLINE white CYAN_63
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320f196f89f9da110800000000000000
+      internalID: 1273849748936323107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Potions 64x64 OUTLINE white CYAN_49: 3107225469723267590
+      Potions 64x64 OUTLINE white CYAN_63: 1273849748936323107
+      Potions 64x64 OUTLINE white CYAN_21: 372345525848184683
+      Potions 64x64 OUTLINE white CYAN_2: -3120364836690841138
+      Potions 64x64 OUTLINE white CYAN_41: -8432816721905600211
+      Potions 64x64 OUTLINE white CYAN_11: 4614789407014215830
+      Potions 64x64 OUTLINE white CYAN_38: 716126669599558575
+      Potions 64x64 OUTLINE white CYAN_16: 6407448407213610954
+      Potions 64x64 OUTLINE white CYAN_36: -1981578703259333734
+      Potions 64x64 OUTLINE white CYAN_6: -6977670394924460579
+      Potions 64x64 OUTLINE white CYAN_47: -1061869615591543718
+      Potions 64x64 OUTLINE white CYAN_54: 471581220629401226
+      Potions 64x64 OUTLINE white CYAN_28: 9111961270413510999
+      Potions 64x64 OUTLINE white CYAN_9: -8686709472678589586
+      Potions 64x64 OUTLINE white CYAN_37: -6507948105824366031
+      Potions 64x64 OUTLINE white CYAN_60: 5170496140805573293
+      Potions 64x64 OUTLINE white CYAN_15: -4158092882507936775
+      Potions 64x64 OUTLINE white CYAN_62: -3533704695673348978
+      Potions 64x64 OUTLINE white CYAN_0: -849530701772993054
+      Potions 64x64 OUTLINE white CYAN_26: -3203241138496539482
+      Potions 64x64 OUTLINE white CYAN_20: 1052142526413972994
+      Potions 64x64 OUTLINE white CYAN_23: -2657176045552454543
+      Potions 64x64 OUTLINE white CYAN_22: -2201407397853074703
+      Potions 64x64 OUTLINE white CYAN_14: -7720496100471026650
+      Potions 64x64 OUTLINE white CYAN_18: -5527370124517099735
+      Potions 64x64 OUTLINE white CYAN_61: 8870119075877018343
+      Potions 64x64 OUTLINE white CYAN_35: 8309168847653894809
+      Potions 64x64 OUTLINE white CYAN_45: 839193963619396041
+      Potions 64x64 OUTLINE white CYAN_51: 3603923094952752980
+      Potions 64x64 OUTLINE white CYAN_32: 4814459034050904501
+      Potions 64x64 OUTLINE white CYAN_13: 2643814579059321009
+      Potions 64x64 OUTLINE white CYAN_29: 2299096626629464515
+      Potions 64x64 OUTLINE white CYAN_34: -7622948518206789106
+      Potions 64x64 OUTLINE white CYAN_52: -9114756279494428814
+      Potions 64x64 OUTLINE white CYAN_58: 9033176222201302648
+      Potions 64x64 OUTLINE white CYAN_3: -46412036473457889
+      Potions 64x64 OUTLINE white CYAN_12: 6383817077129564092
+      Potions 64x64 OUTLINE white CYAN_48: 530725803534107701
+      Potions 64x64 OUTLINE white CYAN_24: 3461156297901762794
+      Potions 64x64 OUTLINE white CYAN_5: 3098764749240196465
+      Potions 64x64 OUTLINE white CYAN_31: -4846662777222225277
+      Potions 64x64 OUTLINE white CYAN_56: 1752250975563160683
+      Potions 64x64 OUTLINE white CYAN_1: 417638242445374221
+      Potions 64x64 OUTLINE white CYAN_57: 3738474816488223461
+      Potions 64x64 OUTLINE white CYAN_30: -2052628236278004209
+      Potions 64x64 OUTLINE white CYAN_53: -5276944251770513699
+      Potions 64x64 OUTLINE white CYAN_33: -2087135377947186535
+      Potions 64x64 OUTLINE white CYAN_17: 2070665491280769217
+      Potions 64x64 OUTLINE white CYAN_27: 2376619559769516140
+      Potions 64x64 OUTLINE white CYAN_43: 7397456292839527968
+      Potions 64x64 OUTLINE white CYAN_55: 7199280751097386977
+      Potions 64x64 OUTLINE white CYAN_8: -2121747313792210698
+      Potions 64x64 OUTLINE white CYAN_10: -9104775991894015437
+      Potions 64x64 OUTLINE white CYAN_19: 2072753346855503372
+      Potions 64x64 OUTLINE white CYAN_39: 8852621711501054284
+      Potions 64x64 OUTLINE white CYAN_42: -638305079370289809
+      Potions 64x64 OUTLINE white CYAN_50: 6431243248741343291
+      Potions 64x64 OUTLINE white CYAN_59: -6741105875972643581
+      Potions 64x64 OUTLINE white CYAN_40: 6301123278084100469
+      Potions 64x64 OUTLINE white CYAN_25: 4837263470646274434
+      Potions 64x64 OUTLINE white CYAN_7: 1557953013454610371
+      Potions 64x64 OUTLINE white CYAN_46: 7524219479701249604
+      Potions 64x64 OUTLINE white CYAN_4: -2945731195282617597
+      Potions 64x64 OUTLINE white CYAN_44: -1827319613602962947
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

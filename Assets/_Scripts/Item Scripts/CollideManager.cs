@@ -11,6 +11,8 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     [SerializeField] private int _maxScore = 150;
     [SerializeField] private int _fungusDamage = 15;
     [SerializeField] private int _enemyDamage = 30;
+    [SerializeField] private int _healAmount = 15;
+
     [SerializeField] private GameObject _playerBody;
     //[SerializeField] private PlayerController _playerController;
     [SerializeField] private RectTransform _faderImage;
@@ -25,18 +27,26 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     [Header("Particle Properties")]
     [SerializeField] private ParticleSystem _damageParticleSystem;
+    [SerializeField] private ParticleSystem _healParticleSystem;
     [SerializeField] private ParticleSystem _coinParticleSystem;
 
     [Header("Audio Properties")]
     [SerializeField] private AudioSource _coinSound;
     [SerializeField] private AudioSource _deathSound; 
     [SerializeField] private AudioSource _hurtSound;   
+    [SerializeField] private AudioSource _healSound;  
 
     private void Awake()
     {
         healthSystem = new HealthSystem(100);
-        healthSystem.OnDead += HealthSystem_OnDead;
 
+        healthSystem.OnDead += HealthSystem_OnDead;
+        healthSystem.OnDamaged += HealthSystem_OnDamaged;
+        healthSystem.OnHealed += HealthSystem_OnHealed;
+    }
+
+    private void Start()
+    {
         _faderImage.gameObject.SetActive(true);
         LeanTween.alpha(_faderImage, 1, 0);
         LeanTween.alpha(_faderImage, 0, 2f).setOnComplete(() => {
@@ -44,21 +54,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         });
     }
 
-    private void FixedUpdate()
-    {
-        if(UnityEngine.Input.GetButtonDown("Jump")) 
-        {
-            //Debug.Log("this is being called");
-            //_screenShakeInstance = CameraShakerHandler.Shake(_jumpShakeData);
-        }
-        else
-        {
-            _screenShakeInstance= null;
-        }
-    }
-
-    public HealthSystem GetHealthSystem()
-    {
+    public HealthSystem GetHealthSystem() {
         return healthSystem;
     }
 
@@ -67,7 +63,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         _deathSound.Play();
         _playerBody.SetActive(false);
         //_playerController.enabled = false;
-        StartCoroutine(RestartLevelAfterDelay(1f));
+        StartCoroutine(RestartLevelAfterDelay(0.3f));
         _damageParticleSystem.Play();
 
         _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
@@ -78,17 +74,20 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         _damageParticleSystem.Play();
     }
 
+    private void HealthSystem_OnHealed(object sender, System.EventArgs e) {
+        _healParticleSystem.Play();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(SumScore.Score > _maxScore)
         {
-            StartCoroutine(LoadNextlevelAfterDelay(1f));
+            StartCoroutine(LoadNextlevelAfterDelay(0.3f));
         }
 
         switch(other.gameObject.tag)
         {
             case "Coin":
-                //Debug.Log("TOUCHED"); 
                 SumScore.Add(_coinValue);
                 _coinParticleSystem.Play();
                 _coinSound.Play();
@@ -108,9 +107,16 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
                 break;
             
+            case "Heal":
+                _healSound.Play();
+                healthSystem.Heal(_healAmount);
+                _healParticleSystem.Play();
+                _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+                break;
+            
             case "Death":
                 _playerBody.SetActive(false);
-                StartCoroutine(RestartLevelAfterDelay(1f));
+                StartCoroutine(RestartLevelAfterDelay(0.3f));
                 break;
         }
     }

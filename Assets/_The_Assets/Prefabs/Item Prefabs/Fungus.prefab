@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 497846006617787050}
   - component: {fileID: 1496650480}
   - component: {fileID: 1496650481}
+  - component: {fileID: 1108377226}
   m_Layer: 0
   m_Name: Fungus
   m_TagString: Fungus
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 453840852446608422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.15, y: -2.8, z: 0}
-  m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
+  m_LocalScale: {x: 2.3, y: 1.98375, z: 2.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -233,3 +234,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e4a236f3c468774eb6a35e588bbec0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1108377226
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453840852446608422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e395aec10c82f640ab132f46d45b7b7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

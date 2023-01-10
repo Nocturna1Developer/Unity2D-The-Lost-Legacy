@@ -32,8 +32,10 @@ namespace TarodevController
 
         void Awake() => _player = GetComponentInParent<IPlayerController>();
 
-        private void Update()
+        private void FixedUpdate()
         {
+            if (isDashing) return; // orginally was in fixed update only
+
             if (Input.GetKeyDown(KeyCode.Mouse0) && canDash)
             {
                 StartCoroutine(Dash());
@@ -45,10 +47,10 @@ namespace TarodevController
             Flip();
         }
 
-        private void FixedUpdate()
-        {
-            if (isDashing) return;
-        }
+        //private void FixedUpdate()
+        //{
+        //    if (isDashing) return;
+        //}
 
         private void Flip()
         {
@@ -67,7 +69,7 @@ namespace TarodevController
 
             float originalGravity = rb.gravityScale; // turning of gravity during dash
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(transform.localScale.x * dashingPower * Time.deltaTime, 0f); // direction player is facing
+            rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f); // direction player is facing
 
             yield return new WaitForSeconds(dashingTime);
             rb.gravityScale = originalGravity;

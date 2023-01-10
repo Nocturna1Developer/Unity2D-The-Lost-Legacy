@@ -1,5 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 namespace TarodevController {
     /// <summary>
@@ -30,7 +32,15 @@ namespace TarodevController {
             if (_player == null) return;
 
             // Flip the sprite
-            if (_player.Input.X != 0) transform.localScale = new Vector3(_player.Input.X > 0 ? 1 : -1, 1, 1);
+            if (_player.Input.X != 0) 
+            {
+                transform.localScale = new Vector3(_player.Input.X > 0 ? 1 : -1, 1, 1);
+                _anim.SetTrigger(RunningKey);
+            }
+            else
+            {
+                _anim.ResetTrigger(RunningKey);
+            }
 
             // Lean while running
             var targetRotVector = new Vector3(0, 0, Mathf.Lerp(-_maxTilt, _maxTilt, Mathf.InverseLerp(-1, 1, _player.Input.X)));
@@ -62,12 +72,14 @@ namespace TarodevController {
             if (!_playerGrounded && _player.Grounded) {
                 _playerGrounded = true;
                 _moveParticles.Play();
+                //_anim.SetTrigger(RunningKey);
                 _landParticles.transform.localScale = Vector3.one * Mathf.InverseLerp(0, _maxParticleFallSpeed, _movement.y);
                 SetColor(_landParticles);
                 _landParticles.Play();
             }
             else if (_playerGrounded && !_player.Grounded) {
                 _playerGrounded = false;
+                //_anim.ResetTrigger(RunningKey);
                 _moveParticles.Stop();
             }
 
@@ -99,6 +111,7 @@ namespace TarodevController {
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
+        private static readonly int RunningKey = Animator.StringToHash("Run");
 
         #endregion
     }
