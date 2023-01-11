@@ -49826,9 +49826,10 @@ GameObject:
   - component: {fileID: 4360911359747139110}
   - component: {fileID: 4421092746220369514}
   - component: {fileID: 489603456651680035}
+  - component: {fileID: 6900529290893238963}
   m_Layer: 1
   m_Name: DrawCharacter_TEST
-  m_TagString: Player
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49948,7 +49949,7 @@ MonoBehaviour:
   controller: {fileID: 4461629279342131008}
   animator: {fileID: 4407836683350046734}
   runSpeed: 40
-  _screenShakeData: {fileID: 11400000, guid: 59266091a9cbea041933e5d2555a3811, type: 2}
+  _screenShakeData: {fileID: 11400000, guid: 7370a84a2745f5e46bdd9ae58bd4c6d8, type: 2}
   _dashSound: {fileID: 4053516167098247356}
   _dashParticleSystem: {fileID: 4053516166040102917}
 --- !u!212 &4506855031018854348
@@ -50184,6 +50185,20 @@ MonoBehaviour:
   _deathSound: {fileID: 4053516166876069167}
   _hurtSound: {fileID: 4053516166555056955}
   _healSound: {fileID: 4053516167680753760}
+--- !u!114 &6900529290893238963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358310535880666978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb9aa7183709da429076edc5294507b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthAmountMax: 100
+  startingHealthAmount: 0
 --- !u!1001 &4053516166589845208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50309,12 +50324,12 @@ PrefabInstance:
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75.38535
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -36.08691
+      value: 3.28
       objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699838, guid: f1419c2a3f5ecf44e824039f908fea60,
         type: 3}
