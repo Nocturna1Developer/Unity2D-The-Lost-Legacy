@@ -17,6 +17,10 @@ TagManager:
   - Death
   - Enemy
   - Heal
+  - Effect
+  - Projectile
+  - FxTemporaire
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX

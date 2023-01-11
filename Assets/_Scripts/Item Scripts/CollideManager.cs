@@ -127,12 +127,13 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             case "Coin":
                 SumScore.Add(_coinValue);
                 _coinSound.Play();
+                _coinParticleSystem.Play();
 
-                // Screen flashes red
+                // Screen flashes white
                 _collectImage.gameObject.SetActive(true);
                 LeanTween.alpha(_collectImage, 1, 0);
                 LeanTween.alpha(_collectImage, 0, 0.2f).setOnComplete(() => {
-                    _coinParticleSystem.Play();
+                    
                 });
                 break;
 
@@ -140,12 +141,13 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 _hurtSound.Play();
                 healthSystem.Damage(_enemyDamage);
                 _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+                _damageParticleSystem.Play();
 
                 // Screen flashes red
                 _damageImage.gameObject.SetActive(true);
                 LeanTween.alpha(_damageImage, 1, 0);
                 LeanTween.alpha(_damageImage, 0, 0.2f).setOnComplete(() => {
-                    _damageParticleSystem.Play();
+                    
                 });
                 break;
             
@@ -153,24 +155,26 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 _hurtSound.Play();
                 healthSystem.Damage(15f);
                 _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
-                
+                _damageParticleSystem.Play();
+
                 // Screen flashes red
                 _damageImage.gameObject.SetActive(true);
                 LeanTween.alpha(_damageImage, 1, 0);
                 LeanTween.alpha(_damageImage, 0, 0.2f).setOnComplete(() => {
-                    _damageParticleSystem.Play();
+                    
                 });
                 break;
             
             case "Heal":
                 _healSound.Play();
                 healthSystem.Heal(_healAmount);
+                _healParticleSystem.Play(); 
 
                 // Screen flashes green
                 _healImage.gameObject.SetActive(true);
                 LeanTween.alpha(_healImage, 1, 0);
                 LeanTween.alpha(_healImage, 0, 0.2f).setOnComplete(() => {
-                    _healParticleSystem.Play();
+                    
                 });
                 break;
             

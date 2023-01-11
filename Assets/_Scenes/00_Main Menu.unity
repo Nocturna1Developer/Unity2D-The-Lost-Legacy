@@ -1118,7 +1118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Crystal Journey
+  m_Text: UNTITLED
 --- !u!222 &576440312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1699,6 +1699,7 @@ GameObject:
   - component: {fileID: 814734166}
   - component: {fileID: 814734168}
   - component: {fileID: 814734167}
+  - component: {fileID: 814734169}
   m_Layer: 5
   m_Name: Title Background
   m_TagString: Untagged
@@ -1765,6 +1766,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814734165}
   m_CullTransparentMesh: 0
+--- !u!95 &814734169
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814734165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6e3dfe2fbf0905478c0ca1c30b88079, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &822017516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,7 +3839,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5c0b7b21f2430f418ccc279b0d6dd28, type: 3}
+  m_Sprite: {fileID: -2213567507432036408, guid: 4c4dc131d2c789e459cc64987d258654,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
