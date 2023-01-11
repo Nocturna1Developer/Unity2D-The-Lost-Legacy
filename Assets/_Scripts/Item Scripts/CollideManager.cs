@@ -119,7 +119,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     {
         if(SumScore.Score > _maxScore)
         {
-            StartCoroutine(LoadNextlevelAfterDelay(0.3f));
+            StartCoroutine(LoadNextlevelAfterDelay(0.5f));
         }
 
         switch(other.gameObject.tag)
@@ -131,7 +131,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 // Screen flashes red
                 _collectImage.gameObject.SetActive(true);
                 LeanTween.alpha(_collectImage, 1, 0);
-                LeanTween.alpha(_collectImage, 0, 0.5f).setOnComplete(() => {
+                LeanTween.alpha(_collectImage, 0, 0.2f).setOnComplete(() => {
                     _coinParticleSystem.Play();
                 });
                 break;
@@ -144,7 +144,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 // Screen flashes red
                 _damageImage.gameObject.SetActive(true);
                 LeanTween.alpha(_damageImage, 1, 0);
-                LeanTween.alpha(_damageImage, 0, 0.5f).setOnComplete(() => {
+                LeanTween.alpha(_damageImage, 0, 0.2f).setOnComplete(() => {
                     _damageParticleSystem.Play();
                 });
                 break;
@@ -157,7 +157,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 // Screen flashes red
                 _damageImage.gameObject.SetActive(true);
                 LeanTween.alpha(_damageImage, 1, 0);
-                LeanTween.alpha(_damageImage, 0, 0.5f).setOnComplete(() => {
+                LeanTween.alpha(_damageImage, 0, 0.2f).setOnComplete(() => {
                     _damageParticleSystem.Play();
                 });
                 break;
@@ -169,14 +169,14 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 // Screen flashes green
                 _healImage.gameObject.SetActive(true);
                 LeanTween.alpha(_healImage, 1, 0);
-                LeanTween.alpha(_healImage, 0, 0.5f).setOnComplete(() => {
+                LeanTween.alpha(_healImage, 0, 0.2f).setOnComplete(() => {
                     _healParticleSystem.Play();
                 });
                 break;
             
             case "Death":
                 _playerBody.SetActive(false);
-                StartCoroutine(RestartLevelAfterDelay(0.3f));
+                StartCoroutine(RestartLevelAfterDelay(0.5f));
                 break;
         }
     }

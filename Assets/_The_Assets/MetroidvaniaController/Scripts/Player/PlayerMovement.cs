@@ -17,8 +17,8 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private ShakeData _screenShakeData = null;
 	private ShakerInstance             _screenShakeInstance;
 
-	[Header("Audio Properties")]
-	[SerializeField] private AudioSource _dashSound;
+	//[Header("Audio Properties")]
+	//[SerializeField] private AudioSource _dashSound;
 
 	[Header("Particle Properties")]
 	[SerializeField] private ParticleSystem _dashParticleSystem;
@@ -40,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
-            _dashSound.Play();
+            //_dashSound.Play();
             _dashParticleSystem.Play();
 			dash = true;
 		}
