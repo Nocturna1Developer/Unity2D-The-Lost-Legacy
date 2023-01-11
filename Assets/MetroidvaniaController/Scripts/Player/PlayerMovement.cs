@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
-            _dashSound.Play();
+            if(dash) _dashSound.Play();
             _dashParticleSystem.Play();
 			dash = true;
 		}
