@@ -5,11 +5,10 @@ using FirstGearGames.SmoothCameraShaker;
 
 public class PlayerMovement : MonoBehaviour
 {
+	[Header("Core Properties")]
 	public CharacterController2D controller;
 	public Animator animator;
-
 	public float runSpeed = 40f;
-
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool dash = false;
@@ -41,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
-            if(dash) _dashSound.Play();
+            _dashSound.Play();
             _dashParticleSystem.Play();
 			dash = true;
 		}

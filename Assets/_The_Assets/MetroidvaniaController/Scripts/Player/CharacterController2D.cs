@@ -5,46 +5,47 @@ using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
-	[SerializeField] private Transform m_WallCheck;								//Posicion que controla si el personaje toca una pared
+	[SerializeField] private Transform m_WallCheck;								// Posicion que controla si el personaje toca una pared
+	[SerializeField] private float limitFallSpeed = 25f; 						// Limit fall speed
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 velocity = Vector3.zero;
-	[SerializeField] private float limitFallSpeed = 25f; // Limit fall speed
-
-	public bool canDoubleJump = true; //If player can double jump
+	
+	[Header("Movement Properties")]
+	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
+	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private float m_DashForce = 25f;
+
 	private bool canDash = true;
-	private bool isDashing = false; //If player is dashing
-	private bool m_IsWall = false; //If there is a wall in front of the player
-	private bool isWallSliding = false; //If player is sliding in a wall
-	private bool oldWallSlidding = false; //If player is sliding in a wall in the previous frame
+	public bool canDoubleJump = true; 		//If player can double jump
+	private bool isDashing = false; 		//If player is dashing
+	private bool m_IsWall = false; 			//If there is a wall in front of the player
+	private bool isWallSliding = false; 	//If player is sliding in a wall
+	private bool oldWallSlidding = false;   //If player is sliding in a wall in the previous frame
 	private float prevVelocityX = 0f;
-	private bool canCheck = false; //For check if player is wallsliding
-	[SerializeField] private float _addMassOnJump = 8f;
-
-	public float life = 10f; //Life of the player
-	public bool invincible = false; //If player can die
-	private bool canMove = true; //If player can move
-
-	private Animator animator;
-	public ParticleSystem particleJumpUp; //Trail particles
-	public ParticleSystem particleJumpDown; //Explosion particles
-
+	private bool canCheck = false; 			//For check if player is wallsliding
+	private bool canMove = true; 			//If player can move
 	private float jumpWallStartX = 0;
-	private float jumpWallDistX = 0; //Distance between player and wall
-	private bool limitVelOnWallJump = false; //For limit wall jump distance with low fps
+	private float jumpWallDistX = 0; 			//Distance between player and wall
+	private bool limitVelOnWallJump = false; 	//For limit wall jump distance with low fps
+
+	[Header("Health Properties")]
+	public float life = 10f; 				//Life of the player
+	public bool invincible = false; 		//If player can die
+
+	[Header("Particle Properties")]
+	private Animator animator;
+	[SerializeField] private ParticleSystem particleJumpUp; 	//Trail particles
+	[SerializeField] private ParticleSystem particleJumpDown;   //Explosion particles
+	[SerializeField] private ParticleSystem moveParticleSystem;
 
 	[Header("Events")]
-	[Space]
-
 	public UnityEvent OnFallEvent;
 	public UnityEvent OnLandEvent;
 
@@ -135,6 +136,7 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool jump, bool dash)
 	{
 		if (canMove) {
+			moveParticleSystem.Play();
 			if (dash && canDash && !isWallSliding)
 			{
 				//m_Rigidbody2D.AddForce(new Vector2(transform.localScale.x * m_DashForce, 0f));
@@ -179,15 +181,14 @@ public class CharacterController2D : MonoBehaviour
 				canDoubleJump = true;
 				particleJumpDown.Play();
 				particleJumpUp.Play();
-				//m_Rigidbody2D.mass = _addMassOnJump;
 			}
+
 			else if (!m_Grounded && jump && canDoubleJump && !isWallSliding)
 			{
 				canDoubleJump = false;
 				m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
 				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce / 1.2f));
 				animator.SetBool("IsDoubleJumping", true);
-				//m_Rigidbody2D.mass = 5f; // orginal mass
 			}
 
 			else if (m_IsWall && !m_Grounded)
@@ -249,6 +250,10 @@ public class CharacterController2D : MonoBehaviour
 				m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 				canDoubleJump = true;
 			}
+		}
+		else
+		{
+			moveParticleSystem.Stop();
 		}
 	}
 
