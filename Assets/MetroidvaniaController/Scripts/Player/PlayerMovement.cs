@@ -1,9 +1,10 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using FirstGearGames.SmoothCameraShaker;
 
-public class PlayerMovement : MonoBehaviour {
-
+public class PlayerMovement : MonoBehaviour
+{
 	public CharacterController2D controller;
 	public Animator animator;
 
@@ -12,6 +13,16 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool dash = false;
+
+	[Header("Camera Properties")]
+	[SerializeField] private ShakeData _screenShakeData = null;
+	private ShakerInstance             _screenShakeInstance;
+
+	[Header("Audio Properties")]
+	[SerializeField] private AudioSource _dashSound;
+
+	[Header("Particle Properties")]
+	[SerializeField] private ParticleSystem _dashParticleSystem;
 
 	//bool dashAxis = false;
 	
@@ -22,13 +33,16 @@ public class PlayerMovement : MonoBehaviour {
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if (Input.GetKeyDown(KeyCode.Z))
+		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			jump = true;
 		}
 
-		if (Input.GetKeyDown(KeyCode.C))
+		if (Input.GetKeyDown(KeyCode.Mouse0))
 		{
+			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+            _dashSound.Play();
+            _dashParticleSystem.Play();
 			dash = true;
 		}
 
