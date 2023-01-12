@@ -6,7 +6,8 @@ using FirstGearGames.SmoothCameraShaker;
 public class Attack : MonoBehaviour
 {
 	[Header("Core Properties")]
-	[SerializeField] private GameObject throwableObject;
+	[SerializeField] private GameObject _swordSlash;
+	//[SerializeField] private ProjectileBehaviour _swordSlash;
 	[SerializeField] private Transform attackCheck;
 	[SerializeField] private bool canAttack = true;
 	[SerializeField] private bool isTimeToCheck = false;
@@ -34,16 +35,17 @@ public class Attack : MonoBehaviour
 			animator.SetBool("IsAttacking", true);
 			StartCoroutine(AttackCooldown());
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+			Instantiate(_swordSlash, attackCheck.position, attackCheck.rotation);
 		}
 
-		if (Input.GetKeyDown(KeyCode.Mouse1))
-		{
-			//GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
-			GameObject throwableWeapon = Instantiate(throwableObject, attackCheck.position, attackCheck.rotation);
-			Vector2 direction = new Vector2(transform.localScale.x, 0);
-			throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
-			throwableWeapon.name = "ThrowableWeapon";
-		}
+		// if (Input.GetKeyDown(KeyCode.Mouse1))
+		// {
+		// 	//GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
+		// 	GameObject throwableWeapon = Instantiate(throwableObject, attackCheck.position, attackCheck.rotation);
+		// 	Vector2 direction = new Vector2(transform.localScale.x, 0);
+		// 	throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
+		// 	throwableWeapon.name = "ThrowableWeapon";
+		// }
 	}
 
 	IEnumerator AttackCooldown()

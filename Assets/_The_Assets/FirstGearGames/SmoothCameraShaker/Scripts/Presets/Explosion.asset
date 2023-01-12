@@ -56,8 +56,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _roughness: 7.5
-  _roughnessNoise: 0.3
+  _roughness: 3
+  _roughnessNoise: 0.426
   _roughnessCurve:
     serializedVersion: 2
     m_Curve:
