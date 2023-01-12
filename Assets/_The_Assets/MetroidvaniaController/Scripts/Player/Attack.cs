@@ -11,6 +11,7 @@ public class Attack : MonoBehaviour
 	[SerializeField] private Transform attackCheck;
 	[SerializeField] private bool canAttack = true;
 	[SerializeField] private bool isTimeToCheck = false;
+	[SerializeField] private float _attackCoolDown = 1f;
 
 	private Rigidbody2D m_Rigidbody2D;
 
@@ -50,7 +51,7 @@ public class Attack : MonoBehaviour
 
 	IEnumerator AttackCooldown()
 	{
-		yield return new WaitForSeconds(0.25f);
+		yield return new WaitForSeconds(_attackCoolDown);
 		canAttack = true;
 	}
 }

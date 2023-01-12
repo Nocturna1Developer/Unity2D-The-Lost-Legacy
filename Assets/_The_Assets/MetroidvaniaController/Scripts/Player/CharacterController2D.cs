@@ -145,7 +145,14 @@ public class CharacterController2D : MonoBehaviour
 			// If crouching, check to see if the character can stand up
 			if (isDashing)
 			{
-				m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
+				if(transform.rotation.y < 0)
+				{
+					m_Rigidbody2D.velocity = new Vector2(-transform.localScale.x * m_DashForce, 0);
+				}
+				else if(transform.rotation.y > 0)
+				{
+					m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * m_DashForce, 0);
+				}
 			}
 			//only control the player if grounded or airControl is turned on
 			else if (m_Grounded || m_AirControl)
