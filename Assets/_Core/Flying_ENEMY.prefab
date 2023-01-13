@@ -5501,6 +5501,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6848739073536652053, guid: f1419c2a3f5ecf44e824039f908fea60,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699834, guid: f1419c2a3f5ecf44e824039f908fea60,
         type: 3}
       propertyPath: m_Name

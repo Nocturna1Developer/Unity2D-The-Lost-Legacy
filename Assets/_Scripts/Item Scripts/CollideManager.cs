@@ -39,6 +39,11 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     [SerializeField] private AudioSource _hurtSound;   
     [SerializeField] private AudioSource _healSound;  
 
+    // private void Awake()
+    // {
+
+    // }
+
     private void Awake()
     {
         healthSystem = new HealthSystem(100);
@@ -46,11 +51,8 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
         healthSystem.OnDead += HealthSystem_OnDead;
         //healthSystem.OnDamaged += HealthSystem_OnDamaged;
         //healthSystem.OnHealed += HealthSystem_OnHealed;
-    }
-
-    private void Start()
-    {
         // Screen flashes when interacting with objects in scene
+
         _faderImage.gameObject.SetActive(true);
         _collectImage.gameObject.SetActive(true);
         _damageImage.gameObject.SetActive(true);

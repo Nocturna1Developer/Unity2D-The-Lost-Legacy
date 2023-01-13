@@ -1952,6 +1952,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.24346775
       objectReference: {fileID: 0}
+    - target: {fileID: 6848739073536652053, guid: f1419c2a3f5ecf44e824039f908fea60,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6848739074368699834, guid: f1419c2a3f5ecf44e824039f908fea60,
         type: 3}
       propertyPath: m_Name
@@ -2268,10 +2273,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1953862457}
     m_Modifications:
-    - target: {fileID: 1455599522, guid: d92cc62ab8c1ced49ae13b3bea0bc613, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1429ba6842657e14db43832b03cb73d6, type: 3}
     - target: {fileID: 875413797791621092, guid: d92cc62ab8c1ced49ae13b3bea0bc613,
         type: 3}
       propertyPath: m_RootOrder
@@ -5984,7 +5985,7 @@ PrefabInstance:
     - target: {fileID: 4943779833641151314, guid: 96a15b456d5dc4344a193c2a1757c2f9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.9
+      value: 15.5
       objectReference: {fileID: 0}
     - target: {fileID: 4943779833641151314, guid: 96a15b456d5dc4344a193c2a1757c2f9,
         type: 3}
@@ -10328,6 +10329,11 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 7640796451057370846}
+    - target: {fileID: 6796948114256011492, guid: 0670308e42a0a9f4b9599825d6467747,
+        type: 3}
+      propertyPath: orthographic size
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6796948114585013400, guid: 0670308e42a0a9f4b9599825d6467747,
         type: 3}
       propertyPath: m_Name
