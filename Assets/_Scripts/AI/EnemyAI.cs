@@ -6,7 +6,6 @@ public class EnemyAI : MonoBehaviour, IGetHealthSystem
 {
     [Header("Core Properties")]
     [SerializeField] private float _playerDamage = 30f;
-
     [SerializeField] private GameObject _enemyBody;
 
     [Header("Core Properties")]
@@ -24,7 +23,7 @@ public class EnemyAI : MonoBehaviour, IGetHealthSystem
 
     private void Awake()
     {
-        healthSystem = new HealthSystem(30);
+        healthSystem = new HealthSystem(50);
 
         healthSystem.OnDead += HealthSystem_OnDead;
         //healthSystem.OnDamaged += HealthSystem_OnDamaged;
@@ -39,8 +38,8 @@ public class EnemyAI : MonoBehaviour, IGetHealthSystem
     private void HealthSystem_OnDead(object sender, System.EventArgs e) 
     {
         _deathSound.Play();
-        //_enemyBody.SetActive(false);
-        Destroy(gameObject);
+        _enemyBody.SetActive(false);
+        Destroy(gameObject, 1f);
         _damageParticleSystem.Play();
     }
 

@@ -18,21 +18,24 @@ EditorBuildSettings:
     path: Assets/_Scenes/02_Interlude.unity
     guid: 399e3a48129f4da428316a0a1800a97d
   - enabled: 1
-    path: Assets/_Scenes/01_Level02.unity
-    guid: 1b833af53cf9e034cba451eabec693a5
-  - enabled: 0
+    path: Assets/_Scenes/02_Level02.unity
+    guid: 90b9ee9e07b805f459730a9d09241e48
+  - enabled: 1
     path: Assets/_Scenes/03_Interlude.unity
     guid: 65d35a338f5524c48994f0a780d67213
-  - enabled: 0
-    path: Assets/_Scenes/Z_Junk/03_Level03.unity
-    guid: 945821d47d7757b4a990d78fbc034ed0
-  - enabled: 0
+  - enabled: 1
+    path: Assets/_Scenes/03_Level03.unity
+    guid: 0ca275eefe232f841afa8c06af23d439
+  - enabled: 1
     path: Assets/_Scenes/04_Interlude.unity
     guid: 09fa670413370d445867417b87dc62df
-  - enabled: 0
-    path: Assets/_Scenes/Z_Junk/04_Level04.unity
-    guid: a340d23724c2e86438102c26c4d16726
-  - enabled: 0
-    path: Assets/_Scenes/Z_Junk/05_Credits05.unity
-    guid: a9db362d52eaf9342be369d460b77b34
+  - enabled: 1
+    path: Assets/_Scenes/04_Level04.unity
+    guid: bbedb5db6a4c5294ba03208af52a8f71
+  - enabled: 1
+    path: Assets/_Scenes/05_Interlude.unity
+    guid: 73102831e371330448d93a28d9112969
+  - enabled: 1
+    path: Assets/_Scenes/05_Level05.unity
+    guid: 9c558daaa796bc343bce934bba8054dc
   m_configObjects: {}

@@ -24,21 +24,26 @@ public class MainMenu : MonoBehaviour
     // Level Select Methods
     public void LevelOne()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void LevelTwo()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     public void LevelThree()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(5);
     }
 
     public void LevelFour()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(6);
+    }
+
+    public void LevelFive()
+    {
+        SceneManager.LoadScene(7);
     }
 }
