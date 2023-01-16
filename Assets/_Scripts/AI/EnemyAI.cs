@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour, IGetHealthSystem
 
     [Header("Particle Properties")]
     [SerializeField] private ParticleSystem _damageParticleSystem;
+    [SerializeField] private ParticleSystem _deathParticleSystem;
 
     [Header("Audio Properties")]
     [SerializeField] private AudioSource _deathSound; 
@@ -26,8 +27,6 @@ public class EnemyAI : MonoBehaviour, IGetHealthSystem
         healthSystem = new HealthSystem(50);
 
         healthSystem.OnDead += HealthSystem_OnDead;
-        //healthSystem.OnDamaged += HealthSystem_OnDamaged;
-        //healthSystem.OnHealed += HealthSystem_OnHealed;
     }
 
     public HealthSystem GetHealthSystem()
@@ -37,10 +36,10 @@ public class EnemyAI : MonoBehaviour, IGetHealthSystem
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e) 
     {
+        _deathParticleSystem.Play();
         _deathSound.Play();
         _enemyBody.SetActive(false);
         Destroy(gameObject, 1f);
-        _damageParticleSystem.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

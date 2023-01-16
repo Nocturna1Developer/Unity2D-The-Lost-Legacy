@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
-	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
-	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
-	[SerializeField] private Transform m_WallCheck;								// Posicion que controla si el personaje toca una pared
-	[SerializeField] private float limitFallSpeed = 25f; 						// Limit fall speed
+	[Header("Core Properties")]
+	[SerializeField] private bool m_AirControl = false;						
+	[SerializeField] private LayerMask m_WhatIsGround;							
+	[SerializeField] private Transform m_GroundCheck;							
+	[SerializeField] private Transform m_WallCheck;								
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
@@ -19,30 +19,33 @@ public class CharacterController2D : MonoBehaviour
 	
 	[Header("Movement Properties")]
 	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
+	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
 	[SerializeField] private float m_DashForce = 25f;
+	[SerializeField] private float limitFallSpeed = 25f; 						
+	[SerializeField] private float fallMultiplier = 2.5f;
+	[SerializeField] private float lowJumpMultiplier = 2f;
+	public bool canDoubleJump = true; 		
 
 	private bool canDash = true;
-	public bool canDoubleJump = true; 		//If player can double jump
 	private bool isDashing = false; 		//If player is dashing
 	private bool m_IsWall = false; 			//If there is a wall in front of the player
 	private bool isWallSliding = false; 	//If player is sliding in a wall
 	private bool oldWallSlidding = false;   //If player is sliding in a wall in the previous frame
 	private float prevVelocityX = 0f;
 	private bool canCheck = false; 			//For check if player is wallsliding
-	private bool canMove = true; 			//If player can move
+	private bool canMove = true; 			
 	private float jumpWallStartX = 0;
 	private float jumpWallDistX = 0; 			//Distance between player and wall
 	private bool limitVelOnWallJump = false; 	//For limit wall jump distance with low fps
 
 	[Header("Health Properties")]
-	public float life = 10f; 				//Life of the player
-	public bool invincible = false; 		//If player can die
+	public float life = 10f; 				
+	public bool invincible = false; 		
 
 	[Header("Particle Properties")]
 	private Animator animator;
-	[SerializeField] private ParticleSystem particleJumpUp; 	//Trail particles
-	[SerializeField] private ParticleSystem particleJumpDown;   //Explosion particles
+	[SerializeField] private ParticleSystem particleJumpUp; 	
+	[SerializeField] private ParticleSystem particleJumpDown;   
 	[SerializeField] private ParticleSystem moveParticleSystem;
 
 	[Header("Events")]
@@ -63,7 +66,6 @@ public class CharacterController2D : MonoBehaviour
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 	}
-
 
 	private void FixedUpdate()
 	{
@@ -132,7 +134,6 @@ public class CharacterController2D : MonoBehaviour
 		}
 	}
 
-
 	public void Move(float move, bool jump, bool dash)
 	{
 		if (canMove) {
@@ -188,6 +189,19 @@ public class CharacterController2D : MonoBehaviour
 				canDoubleJump = true;
 				particleJumpDown.Play();
 				particleJumpUp.Play();
+
+
+				// Makes the player fall faster
+				if (m_Rigidbody2D.velocity.y < 0) 
+				{
+					m_Rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+				}
+				else if (m_Rigidbody2D.velocity.y > 0 && !jump)
+				{
+					m_Rigidbody2D.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+				}
+
+
 			}
 
 			else if (!m_Grounded && jump && canDoubleJump && !isWallSliding)
@@ -263,7 +277,6 @@ public class CharacterController2D : MonoBehaviour
 			moveParticleSystem.Stop();
 		}
 	}
-
 
 	private void Flip()
 	{

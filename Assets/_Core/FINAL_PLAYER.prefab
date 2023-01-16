@@ -5396,10 +5396,12 @@ MonoBehaviour:
     m_Bits: 64
   m_GroundCheck: {fileID: 4201193885648984250}
   m_WallCheck: {fileID: 4202751065498389254}
-  limitFallSpeed: 1000
   m_JumpForce: 1500
   m_MovementSmoothing: 0.05
   m_DashForce: 70
+  limitFallSpeed: 100000
+  fallMultiplier: 50.5
+  lowJumpMultiplier: 50
   canDoubleJump: 0
   life: 10
   invincible: 1
@@ -5466,7 +5468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinValue: 20
-  _maxScore: 220
+  _maxScore: 160
   _fungusDamage: 20
   _enemyDamage: 30
   _healAmount: 15
@@ -5640,7 +5642,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.447
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

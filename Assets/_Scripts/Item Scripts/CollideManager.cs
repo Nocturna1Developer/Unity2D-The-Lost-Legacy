@@ -7,6 +7,8 @@ using FirstGearGames.SmoothCameraShaker;
 public class CollideManager : MonoBehaviour, IGetHealthSystem 
 {
     [Header("Core Properties")]
+    public static GameplayManager instance;
+    private Scene scene;
     [SerializeField] private int _coinValue = 30;
     [SerializeField] private int _maxScore = 150;
     [SerializeField] private float _fungusDamage = 15f;
@@ -14,7 +16,6 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     [SerializeField] private float _healAmount = 15f;
 
     [SerializeField] private GameObject _playerBody;
-    //[SerializeField] private PlayerController _playerController;
     [SerializeField] private RectTransform _faderImage;
     [SerializeField] private RectTransform _collectImage;
     [SerializeField] private RectTransform _damageImage;
@@ -39,20 +40,16 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
     [SerializeField] private AudioSource _hurtSound;   
     [SerializeField] private AudioSource _healSound;  
 
-    // private void Awake()
-    // {
-
-    // }
-
     private void Awake()
     {
         healthSystem = new HealthSystem(100);
+        scene = SceneManager.GetActiveScene();
 
         healthSystem.OnDead += HealthSystem_OnDead;
         //healthSystem.OnDamaged += HealthSystem_OnDamaged;
         //healthSystem.OnHealed += HealthSystem_OnHealed;
-        // Screen flashes when interacting with objects in scene
 
+        // Screen flashes when interacting with objects in scene
         _faderImage.gameObject.SetActive(true);
         _collectImage.gameObject.SetActive(true);
         _damageImage.gameObject.SetActive(true);
@@ -119,9 +116,12 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(SumScore.Score > _maxScore)
+        if(SumScore.Score > _maxScore) //scene.buildIndex < 11
         {
-            StartCoroutine(LoadNextlevelAfterDelay(0.5f));
+            LeanTween.scale (_faderImage, new Vector3 (1, 1, 1), 0);
+            LeanTween.scale (_faderImage, Vector3.zero, 1f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
+                StartCoroutine(LoadNextlevelAfterDelay(0.5f));
+             });
         }
 
         switch(other.gameObject.tag)
@@ -130,6 +130,23 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 SumScore.Add(_coinValue);
                 _coinSound.Play();
                 _coinParticleSystem.Play();
+
+                // Screen flashes white
+                _collectImage.gameObject.SetActive(true);
+                LeanTween.alpha(_collectImage, 1, 0);
+                LeanTween.alpha(_collectImage, 0, 0.2f).setOnComplete(() => {
+                    
+                });
+                break;
+
+            case "CoinEndless":
+                SumScore.Add(_coinValue);
+                _coinSound.Play();
+                _coinParticleSystem.Play();
+
+                // Increases Timer
+                instance.countdownTimer += 2;
+                Debug.Log("TIMER INCREASED");
 
                 // Screen flashes white
                 _collectImage.gameObject.SetActive(true);

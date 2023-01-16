@@ -159,7 +159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111740573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.59, y: -5.47, z: 36.007812}
+  m_LocalPosition: {x: -13.59, y: -5.7, z: 36.007812}
   m_LocalScale: {x: 17.975, y: 17.975, z: 17.975}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2593,10 +2593,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1953862457}
     m_Modifications:
-    - target: {fileID: 1455599522, guid: d92cc62ab8c1ced49ae13b3bea0bc613, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1429ba6842657e14db43832b03cb73d6, type: 3}
     - target: {fileID: 875413797791621092, guid: d92cc62ab8c1ced49ae13b3bea0bc613,
         type: 3}
       propertyPath: m_RootOrder
@@ -6230,7 +6226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49e6ee33250214a9facc214f3a2fecb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.1
+      value: 25.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49e6ee33250214a9facc214f3a2fecb7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6589,11 +6585,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 69462361279472243, guid: 4c2e87116ea90c049892ee59e1271b68,
         type: 3}
-      propertyPath: _maxScore
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 69462361279472243, guid: 4c2e87116ea90c049892ee59e1271b68,
-        type: 3}
       propertyPath: _playerBody
       value: 
       objectReference: {fileID: 6432609860409568976}
@@ -6656,6 +6647,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311994510797114384, guid: 4c2e87116ea90c049892ee59e1271b68,
+        type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311994510797114384, guid: 4c2e87116ea90c049892ee59e1271b68,
+        type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4311994510797114384, guid: 4c2e87116ea90c049892ee59e1271b68,
+        type: 3}
+      propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6484680771348650476, guid: 4c2e87116ea90c049892ee59e1271b68,
         type: 3}

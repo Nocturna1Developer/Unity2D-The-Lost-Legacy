@@ -21,6 +21,7 @@ TagManager:
   - Projectile
   - FxTemporaire
   - PlayerProjectile
+  - CoinEndless
   layers:
   - Default
   - TransparentFX
