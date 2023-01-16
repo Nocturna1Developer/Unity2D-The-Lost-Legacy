@@ -39,11 +39,11 @@ public class MainMenu : MonoBehaviour
 
     public void LevelFour()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 
     public void LevelFive()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(11);
     }
 }

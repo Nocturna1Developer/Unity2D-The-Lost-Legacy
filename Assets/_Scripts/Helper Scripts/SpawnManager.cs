@@ -29,21 +29,21 @@ public class SpawnManager : MonoBehaviour
         {
             _nextSpawnCoins = Time.time + _nextRateCoins;
             SpawnCoinAtRandom();
-            Debug.Log("COIN SPAWNED");
+            //Debug.Log("COIN SPAWNED");
         }
 
         if(Time.time > _nextSpawnEnemy)
         {
             _nextSpawnEnemy = Time.time + _spawnRateEnemy;
             SpawnEnemyAtRandom();
-            Debug.Log("ENEMY SPAWNED");
+            //Debug.Log("ENEMY SPAWNED");
         }
 
         if(Time.time > _nextSpawnPotion)
         {
             _nextSpawnPotion = Time.time + _spawnRatePotion;
             SpawnPotionAtRandom();
-            Debug.Log("POTION SPAWNED");
+            //Debug.Log("POTION SPAWNED");
         }
     }
 

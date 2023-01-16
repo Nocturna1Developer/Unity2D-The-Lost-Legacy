@@ -583,7 +583,7 @@ MonoBehaviour:
   countdownText: {fileID: 0}
   scoreText: {fileID: 0}
   scoreFillUI: {fileID: 0}
-  countdownTimer: 55
+  countdownTimer: 65
 --- !u!1 &6796948114967004362
 GameObject:
   m_ObjectHideFlags: 0

@@ -1844,7 +1844,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -9999
-  m_Sprite: {fileID: 21300000, guid: f55507d454bdf4147a49efc80be9332b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd8e132a64c68724e83ef37f68f9c1c7, type: 3}
   m_Color: {r: 0.8490566, g: 0.8490566, b: 0.8490566, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10428,7 +10428,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sharedProfile
       value: 
-      objectReference: {fileID: 11400000, guid: e3393dc4dbc0f6a49b715e4e822a25ed,
+      objectReference: {fileID: 11400000, guid: 50f265f8f3d19a344987c6242e01f93f,
         type: 2}
     - target: {fileID: 7742444132851034964, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}

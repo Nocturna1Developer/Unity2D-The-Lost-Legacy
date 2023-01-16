@@ -42,6 +42,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void Awake()
     {
+
         healthSystem = new HealthSystem(100);
         scene = SceneManager.GetActiveScene();
 
@@ -92,6 +93,9 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             _damageParticleSystem.Play();
             _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
         });
+
+        if (SumScore.Score > SumScore.HighScore)
+            SumScore.SaveHighScore();
     }
 
     // private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
@@ -145,8 +149,8 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 _coinParticleSystem.Play();
 
                 // Increases Timer
-                instance.countdownTimer += 2;
-                Debug.Log("TIMER INCREASED");
+                GameplayManager.instance.countdownTimer += 2;
+                //Debug.Log("TIMER INCREASED");
 
                 // Screen flashes white
                 _collectImage.gameObject.SetActive(true);

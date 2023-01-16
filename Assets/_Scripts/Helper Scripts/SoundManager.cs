@@ -6,10 +6,6 @@ public class SoundManager : MonoBehaviour {
 
     public static SoundManager instance;
 
-    //[SerializeField]
-    //private AudioSource hookGrab_Gold_FX, hookGrab_Stone_FX, playerLaugh_FX,
-        //pullSoundFX, ropeStretchFX, timeRunningOut_FX, gameEnd_FX;
-
     [SerializeField]
     private AudioSource timeRunningOut_FX, gameEnd_FX;
 
