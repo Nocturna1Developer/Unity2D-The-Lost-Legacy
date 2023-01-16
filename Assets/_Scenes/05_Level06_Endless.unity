@@ -6738,16 +6738,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4311945737006174110, guid: 4c2e87116ea90c049892ee59e1271b68,
-        type: 3}
-      propertyPath: runSpeed
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 4311994510797114384, guid: 4c2e87116ea90c049892ee59e1271b68,
-        type: 3}
-      propertyPath: m_JumpForce
-      value: 1700
-      objectReference: {fileID: 0}
     - target: {fileID: 6484680771348650476, guid: 4c2e87116ea90c049892ee59e1271b68,
         type: 3}
       propertyPath: cam

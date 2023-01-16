@@ -120,11 +120,11 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(SumScore.Score > _maxScore) //scene.buildIndex < 11
+        if(SumScore.Score > _maxScore && scene.buildIndex < 11)
         {
             LeanTween.scale (_faderImage, new Vector3 (1, 1, 1), 0);
-            LeanTween.scale (_faderImage, Vector3.zero, 1f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
-                StartCoroutine(LoadNextlevelAfterDelay(0.5f));
+            LeanTween.scale (_faderImage, Vector3.zero, 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
+                StartCoroutine(LoadNextlevelAfterDelay(0.1f));
              });
         }
 
@@ -203,7 +203,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             
             case "Death":
                 _playerBody.SetActive(false);
-                StartCoroutine(RestartLevelAfterDelay(0.5f));
+                StartCoroutine(RestartLevelAfterDelay(0.1f));
                 break;
         }
     }

@@ -5396,10 +5396,10 @@ MonoBehaviour:
     m_Bits: 64
   m_GroundCheck: {fileID: 4201193885648984250}
   m_WallCheck: {fileID: 4202751065498389254}
-  m_JumpForce: 1500
+  m_JumpForce: 1700
   m_MovementSmoothing: 0.05
-  m_DashForce: 70
-  limitFallSpeed: 100000
+  m_DashForce: 90
+  limitFallSpeed: 100
   fallMultiplier: 50.5
   lowJumpMultiplier: 50
   canDoubleJump: 0
@@ -5452,7 +5452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 4311994510797114384}
   animator: {fileID: 4257700473061475166}
-  runSpeed: 120
+  runSpeed: 150
   _screenShakeData: {fileID: 11400000, guid: cfb5721468f522e4984b6e517151f6d8, type: 2}
   _dashParticleSystem: {fileID: 2720601527168915372}
 --- !u!114 &69462361279472243
@@ -5468,7 +5468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinValue: 20
-  _maxScore: 160
+  _maxScore: 180
   _fungusDamage: 20
   _enemyDamage: 30
   _healAmount: 15
