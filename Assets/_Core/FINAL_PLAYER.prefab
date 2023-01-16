@@ -5321,7 +5321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4199164789114051032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.81, y: 3.03, z: 0}
+  m_LocalPosition: {x: 1.95, y: 3.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5396,7 +5396,7 @@ MonoBehaviour:
     m_Bits: 64
   m_GroundCheck: {fileID: 4201193885648984250}
   m_WallCheck: {fileID: 4202751065498389254}
-  m_JumpForce: 1700
+  m_JumpForce: 1600
   m_MovementSmoothing: 0.05
   m_DashForce: 90
   limitFallSpeed: 100

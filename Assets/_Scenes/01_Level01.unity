@@ -8579,11 +8579,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4202751065498389254, guid: 4c2e87116ea90c049892ee59e1271b68,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.07
-      objectReference: {fileID: 0}
     - target: {fileID: 4311994510797114384, guid: 4c2e87116ea90c049892ee59e1271b68,
         type: 3}
       propertyPath: OnFallEvent.m_PersistentCalls.m_Calls.Array.size

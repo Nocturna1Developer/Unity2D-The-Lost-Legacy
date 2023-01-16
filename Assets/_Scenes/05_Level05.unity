@@ -6929,11 +6929,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 69462361279472243, guid: 4c2e87116ea90c049892ee59e1271b68,
         type: 3}
-      propertyPath: _maxScore
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 69462361279472243, guid: 4c2e87116ea90c049892ee59e1271b68,
-        type: 3}
       propertyPath: _playerBody
       value: 
       objectReference: {fileID: 6432609860409568976}

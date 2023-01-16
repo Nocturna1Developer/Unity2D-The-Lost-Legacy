@@ -98,6 +98,17 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             SumScore.SaveHighScore();
     }
 
+    private void Update()
+    {
+        if(SumScore.Score > _maxScore && scene.buildIndex < 11)
+        {
+            LeanTween.scale (_faderImage, new Vector3 (1, 1, 1), 0);
+            LeanTween.scale (_faderImage, Vector3.zero, 1f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
+                StartCoroutine(LoadNextlevelAfterDelay(0.1f));
+             });
+        }
+    }
+
     // private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
     // {
     //     //_damageParticleSystem.Play();
@@ -120,14 +131,6 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(SumScore.Score > _maxScore && scene.buildIndex < 11)
-        {
-            LeanTween.scale (_faderImage, new Vector3 (1, 1, 1), 0);
-            LeanTween.scale (_faderImage, Vector3.zero, 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
-                StartCoroutine(LoadNextlevelAfterDelay(0.1f));
-             });
-        }
-
         switch(other.gameObject.tag)
         {
             case "Coin":
