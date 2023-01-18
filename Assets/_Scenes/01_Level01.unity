@@ -10951,6 +10951,11 @@ PrefabInstance:
       propertyPath: m_ShowCustomSorter
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2099636288179530080, guid: 0670308e42a0a9f4b9599825d6467747,
+        type: 3}
+      propertyPath: stopNaNPropagation
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6796948113167298579, guid: 0670308e42a0a9f4b9599825d6467747,
         type: 3}
       propertyPath: pauseMenuUI
@@ -11195,11 +11200,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8279620169351766448, guid: 95648297a80193546b53bc996eec9edc,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5c584571d2fa685428f567835c6934ff, type: 3}
     - target: {fileID: 8279620169351766454, guid: 95648297a80193546b53bc996eec9edc,
         type: 3}
       propertyPath: m_Name
