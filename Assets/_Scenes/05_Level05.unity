@@ -9606,6 +9606,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 50f265f8f3d19a344987c6242e01f93f,
         type: 2}
+    - target: {fileID: 7711085342473479908, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711085343517904700, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711085343543171577, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7742444132851034964, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}
       propertyPath: m_Name
