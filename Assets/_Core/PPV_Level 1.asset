@@ -162,7 +162,7 @@ MonoBehaviour:
     value: 1
   gradingMode:
     overrideState: 1
-    value: 1
+    value: 0
   externalLut:
     overrideState: 1
     value: {fileID: 0}
@@ -197,10 +197,10 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -25
+    value: -5
   tint:
     overrideState: 1
-    value: 0
+    value: 45
   colorFilter:
     overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}

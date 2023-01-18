@@ -13631,6 +13631,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2681250208923417031, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: de72c0247af3a914ebb9c18dadaf86b6,
+        type: 2}
     - target: {fileID: 7711085342473479905, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}
       propertyPath: ShapeModule.type
