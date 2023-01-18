@@ -10,6 +10,11 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(RestartLevelAfterDelay(0.1f));
+        }
+
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (GameIsPaused)
@@ -41,4 +46,11 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    private IEnumerator RestartLevelAfterDelay(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }

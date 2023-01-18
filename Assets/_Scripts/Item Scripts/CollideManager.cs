@@ -79,7 +79,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             _healImage.gameObject.SetActive (false);
         });
     }
-
+    
     public HealthSystem GetHealthSystem()
     {
         return healthSystem;
