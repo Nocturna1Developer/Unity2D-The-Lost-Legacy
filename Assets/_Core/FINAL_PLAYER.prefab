@@ -5467,12 +5467,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 847677dfc4360a74498455b155e76728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinValue: 20
+  _coinValue: 15
   _maxScore: 180
   _fungusDamage: 20
   _enemyDamage: 30
   _healAmount: 15
-  _playerBody: {fileID: 0}
+  _playerBody: {fileID: 2720601527165141776}
   _faderImage: {fileID: 4502851288121376724}
   _collectImage: {fileID: 2720601526886596557}
   _damageImage: {fileID: 2720601527022354345}

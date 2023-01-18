@@ -541,6 +541,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Info
       objectReference: {fileID: 0}
+    - target: {fileID: 2322873500587294494, guid: 12daa7c29c998eb4a86489187d2b4f35,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 92845bf87a9c24e49ad11fa99289b007,
+        type: 3}
     - target: {fileID: 2945178194905066153, guid: 12daa7c29c998eb4a86489187d2b4f35,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target

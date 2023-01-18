@@ -42,6 +42,9 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void Awake()
     {
+        // ADS PLACEMENT
+        //Banner.load();
+
 
         healthSystem = new HealthSystem(100);
         scene = SceneManager.GetActiveScene();
@@ -84,6 +87,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void HealthSystem_OnDead(object sender, System.EventArgs e) 
     {
+        //Banner.Show();
         _faderImage.gameObject.SetActive (true);
         LeanTween.scale (_faderImage, Vector3.zero, 0f);
         LeanTween.scale (_faderImage, new Vector3 (1, 1, 1), 0.5f).setEase (LeanTweenType.easeInOutQuad).setOnComplete (() => {
@@ -92,6 +96,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
             StartCoroutine(RestartLevelAfterDelay(0.3f));
             _damageParticleSystem.Play();
             _screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+            //Banner.Hide();
         });
 
         if (SumScore.Score > SumScore.HighScore)
@@ -152,7 +157,7 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
                 _coinParticleSystem.Play();
 
                 // Increases Timer
-                GameplayManager.instance.countdownTimer += 2;
+                GameplayManager.instance.countdownTimer += 4;
                 //Debug.Log("TIMER INCREASED");
 
                 // Screen flashes white
