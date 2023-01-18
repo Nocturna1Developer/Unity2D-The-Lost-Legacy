@@ -13648,6 +13648,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7711085342473479905, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711085342473479905, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 31.95
       objectReference: {fileID: 0}
@@ -13683,6 +13688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7711085343517904697, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711085343517904697, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 31.95
       objectReference: {fileID: 0}
@@ -13715,6 +13725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ShapeModule.radius.value
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711085343543171580, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
       objectReference: {fileID: 0}
     - target: {fileID: 7711085343543171580, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}

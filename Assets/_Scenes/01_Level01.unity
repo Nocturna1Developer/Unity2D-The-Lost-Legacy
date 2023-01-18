@@ -10921,26 +10921,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2275327323999764396}
-    - target: {fileID: 2099636288179530080, guid: 0670308e42a0a9f4b9599825d6467747,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2099636288179530080, guid: 0670308e42a0a9f4b9599825d6467747,
-        type: 3}
-      propertyPath: m_ShowToolkit
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2099636288179530080, guid: 0670308e42a0a9f4b9599825d6467747,
-        type: 3}
-      propertyPath: m_ShowCustomSorter
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2099636288179530080, guid: 0670308e42a0a9f4b9599825d6467747,
-        type: 3}
-      propertyPath: stopNaNPropagation
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6796948113167298579, guid: 0670308e42a0a9f4b9599825d6467747,
         type: 3}
       propertyPath: pauseMenuUI
@@ -11041,6 +11021,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2681250208923417031, guid: 005c6dd88e03a0c4283ab2250a572f10,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 513e952cf48ed44429552f61dd8879f9,
+        type: 2}
     - target: {fileID: 7711085342473479905, guid: 005c6dd88e03a0c4283ab2250a572f10,
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
