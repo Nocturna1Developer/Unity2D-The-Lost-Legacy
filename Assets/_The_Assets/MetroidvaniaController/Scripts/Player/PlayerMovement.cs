@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 			jump = true;
 		}
 
-		if (Input.GetKeyDown(KeyCode.Mouse0))
+		if (Input.GetKeyDown(KeyCode.Z))
 		{
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
             //_dashSound.Play();

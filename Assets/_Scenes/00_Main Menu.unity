@@ -6647,22 +6647,7 @@ PrefabInstance:
     - target: {fileID: 8342608094400637327, guid: 2cecd63eb8e864348870da8d44e853f9,
         type: 3}
       propertyPath: m_Name
-      value: ADS_OBJECT
+      value: Ads Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 8910056928150636754, guid: 2cecd63eb8e864348870da8d44e853f9,
-        type: 3}
-      propertyPath: _hideBannerButton
-      value: 
-      objectReference: {fileID: 1012130725}
-    - target: {fileID: 8910056928150636754, guid: 2cecd63eb8e864348870da8d44e853f9,
-        type: 3}
-      propertyPath: _loadBannerButton
-      value: 
-      objectReference: {fileID: 1906471116}
-    - target: {fileID: 8910056928150636754, guid: 2cecd63eb8e864348870da8d44e853f9,
-        type: 3}
-      propertyPath: _showBannerButton
-      value: 
-      objectReference: {fileID: 630700299}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cecd63eb8e864348870da8d44e853f9, type: 3}
