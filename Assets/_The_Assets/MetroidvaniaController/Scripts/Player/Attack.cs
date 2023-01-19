@@ -23,6 +23,9 @@ public class Attack : MonoBehaviour
 	[SerializeField] private ShakeData _screenShakeData = null;
 	private ShakerInstance             _screenShakeInstance;
 
+	[Header("Mobile Properties")]
+	[SerializeField] private Joystick _dashAttackJoystick;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -30,7 +33,8 @@ public class Attack : MonoBehaviour
 
     private void Update()
     {
-		if (Input.GetKeyDown(KeyCode.Mouse1) && canAttack)
+		float verticalMove = _moveJumpjoystick.Vertical;
+		if (verticalMove > .1f && canAttack)
 		{
 			canAttack = false;
 			animator.SetBool("IsAttacking", true);

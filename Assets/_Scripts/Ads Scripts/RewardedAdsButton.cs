@@ -58,10 +58,10 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-            Debug.Log("Unity Ads Rewarded Ad Completed");
+            //Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
             GameplayManager.instance.countdownTimer += 10;
-            Debug.Log("REWARD HAS BEEN GRANTED");
+            //Debug.Log("REWARD HAS BEEN GRANTED");
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);

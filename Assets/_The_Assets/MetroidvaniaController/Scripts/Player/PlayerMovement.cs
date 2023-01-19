@@ -17,48 +17,78 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private ShakeData _screenShakeData = null;
 	private ShakerInstance             _screenShakeInstance;
 
-	//[Header("Audio Properties")]
-	//[SerializeField] private AudioSource _dashSound;
-
 	[Header("Particle Properties")]
 	[SerializeField] private ParticleSystem _dashParticleSystem;
+
+	[Header("Mobile Properties")]
+	[SerializeField] private Joystick _moveJumpjoystick;
+
+	[Header("Mobile Properties")]
+	[SerializeField] private Joystick _dashAttackJoystick;
 
 	//bool dashAxis = false;
 	
 	// Update is called once per frame
-	void Update () {
+	// void Update () {
 
-		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+	// 	horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+	// 	animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+	// 	if (Input.GetKeyDown(KeyCode.W))
+	// 	{
+	// 		jump = true;
+	// 	}
+
+	// 	if (Input.GetKeyDown(KeyCode.Z))
+	// 	{
+	// 		_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+    //         //_dashSound.Play();
+    //         _dashParticleSystem.Play();
+	// 		dash = true;
+	// 	}
+
+	// 	/*if (Input.GetAxisRaw("Dash") == 1 || Input.GetAxisRaw("Dash") == -1) //RT in Unity 2017 = -1, RT in Unity 2019 = 1
+	// 	{
+	// 		if (dashAxis == false)
+	// 		{
+	// 			dashAxis = true;
+	// 			dash = true;
+	// 		}
+	// 	}
+	// 	else
+	// 	{
+	// 		dashAxis = false;
+	// 	}
+	// 	*/
+
+	// }
+
+	private void Awake()
+	{
+		//playerInputActions = new PlayerInputActions();
+
+	}
+
+	private void Update ()
+	{
+		horizontalMove = _moveJumpjoystick.Horizontal * runSpeed;
+		float verticalMove = _moveJumpjoystick.Vertical;
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if (Input.GetKeyDown(KeyCode.W))
+		if (verticalMove >= .5f)
 		{
 			jump = true;
 		}
 
-		if (Input.GetKeyDown(KeyCode.Z))
+		float horizontalMoveDash = _dashAttackJoystick.Horizontal; 
+		if (horizontalMoveDash > .2f)
 		{
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
-            //_dashSound.Play();
             _dashParticleSystem.Play();
 			dash = true;
 		}
-
-		/*if (Input.GetAxisRaw("Dash") == 1 || Input.GetAxisRaw("Dash") == -1) //RT in Unity 2017 = -1, RT in Unity 2019 = 1
-		{
-			if (dashAxis == false)
-			{
-				dashAxis = true;
-				dash = true;
-			}
-		}
-		else
-		{
-			dashAxis = false;
-		}
-		*/
-
 	}
 
 	public void OnFall()

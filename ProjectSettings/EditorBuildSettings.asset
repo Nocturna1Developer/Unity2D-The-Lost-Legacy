@@ -44,4 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/05_Level06_Endless.unity
     guid: 28e00a20bd0c05343aab5b837385e9a6
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 48f7790cc913755409f2391d43e65a94,
+      type: 2}
