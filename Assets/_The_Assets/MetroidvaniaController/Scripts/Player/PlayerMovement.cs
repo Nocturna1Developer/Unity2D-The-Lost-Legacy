@@ -23,9 +23,6 @@ public class PlayerMovement : MonoBehaviour
 	[Header("Mobile Properties")]
 	[SerializeField] private Joystick _moveJumpjoystick;
 
-	[Header("Mobile Properties")]
-	[SerializeField] private Joystick _dashAttackJoystick;
-
 	//bool dashAxis = false;
 	
 	// Update is called once per frame
@@ -77,18 +74,25 @@ public class PlayerMovement : MonoBehaviour
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-		if (verticalMove >= .5f)
+		if (verticalMove > .5f)
 		{
 			jump = true;
 		}
 
-		float horizontalMoveDash = _dashAttackJoystick.Horizontal; 
-		if (horizontalMoveDash > .2f)
-		{
-			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
-            _dashParticleSystem.Play();
-			dash = true;
-		}
+		// float horizontalMoveDash = _dashAttackJoystick.Horizontal; 
+		// if (Input.GetKeyDown(KeyCode.Z))
+		// {
+		// 	_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+        //     _dashParticleSystem.Play();
+		// 	dash = true;
+		// }
+	}
+
+	public void dashClick()
+	{
+		_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+        _dashParticleSystem.Play();
+		dash = true;
 	}
 
 	public void OnFall()

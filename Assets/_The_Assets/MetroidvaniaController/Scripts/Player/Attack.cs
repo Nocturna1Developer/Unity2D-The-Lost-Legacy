@@ -23,18 +23,26 @@ public class Attack : MonoBehaviour
 	[SerializeField] private ShakeData _screenShakeData = null;
 	private ShakerInstance             _screenShakeInstance;
 
-	[Header("Mobile Properties")]
-	[SerializeField] private Joystick _dashAttackJoystick;
-
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 	}
 
-    private void Update()
-    {
-		float verticalMove = _moveJumpjoystick.Vertical;
-		if (verticalMove > .1f && canAttack)
+    // private void Update()
+    // {
+	// 	if (canAttack)
+	// 	{
+	// 		canAttack = false;
+	// 		animator.SetBool("IsAttacking", true);
+	// 		StartCoroutine(AttackCooldown());
+	// 		_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
+	// 		Instantiate(_swordSlash, attackCheck.position, attackCheck.rotation);
+	// 	}
+	// }
+
+	public void AttackClick()
+	{
+		if (canAttack)
 		{
 			canAttack = false;
 			animator.SetBool("IsAttacking", true);
@@ -42,15 +50,6 @@ public class Attack : MonoBehaviour
 			_screenShakeInstance = CameraShakerHandler.Shake(_screenShakeData);
 			Instantiate(_swordSlash, attackCheck.position, attackCheck.rotation);
 		}
-
-		// if (Input.GetKeyDown(KeyCode.Mouse1))
-		// {
-		// 	//GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,-0.2f), Quaternion.identity) as GameObject; 
-		// 	GameObject throwableWeapon = Instantiate(throwableObject, attackCheck.position, attackCheck.rotation);
-		// 	Vector2 direction = new Vector2(transform.localScale.x, 0);
-		// 	throwableWeapon.GetComponent<ThrowableWeapon>().direction = direction; 
-		// 	throwableWeapon.name = "ThrowableWeapon";
-		// }
 	}
 
 	IEnumerator AttackCooldown()
