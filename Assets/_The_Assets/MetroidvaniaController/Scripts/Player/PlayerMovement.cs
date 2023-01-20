@@ -61,12 +61,6 @@ public class PlayerMovement : MonoBehaviour
 
 	// }
 
-	private void Awake()
-	{
-		//playerInputActions = new PlayerInputActions();
-
-	}
-
 	private void Update ()
 	{
 		horizontalMove = _moveJumpjoystick.Horizontal * runSpeed;
