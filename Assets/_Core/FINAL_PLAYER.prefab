@@ -5347,6 +5347,7 @@ GameObject:
   - component: {fileID: 4248827851118807106}
   - component: {fileID: 4231340617359547766}
   - component: {fileID: 4280474033990995258}
+  - component: {fileID: 2275327323999764407}
   m_Layer: 1
   m_Name: FINAL_PLAYER
   m_TagString: GameController
@@ -5455,6 +5456,7 @@ MonoBehaviour:
   runSpeed: 150
   _screenShakeData: {fileID: 11400000, guid: cfb5721468f522e4984b6e517151f6d8, type: 2}
   _dashParticleSystem: {fileID: 2720601527168915372}
+  _moveJumpjoystick: {fileID: 0}
 --- !u!114 &69462361279472243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5468,7 +5470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinValue: 15
-  _maxScore: 180
+  _maxScore: 1
   _fungusDamage: 20
   _enemyDamage: 30
   _healAmount: 15
@@ -5726,6 +5728,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &2275327323999764407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199175982929024050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 597c16069ca642441a173d77e4e0583e,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &4199202593004531524
 GameObject:
   m_ObjectHideFlags: 0

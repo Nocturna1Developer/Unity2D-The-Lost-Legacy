@@ -19,7 +19,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 #endif
 
         //Disable the button until the ad is ready to show:
-        _showAdButton.interactable = false;
+        //_showAdButton.interactable = false;
     }
  
     // Load content to the Ad Unit:
@@ -60,7 +60,7 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         {
             //Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
-            GameplayManager.instance.countdownTimer += 10;
+            GameplayManager.instance.countdownTimer += 1;
             //Debug.Log("REWARD HAS BEEN GRANTED");
 
             // Load another ad:

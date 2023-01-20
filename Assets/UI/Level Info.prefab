@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 78130523}
   - component: {fileID: 78130522}
   - component: {fileID: 78130521}
+  - component: {fileID: 1503636806473218407}
   m_Layer: 5
-  m_Name: Rewarded Ad Button
+  m_Name: Intersitial Ad Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,9 +123,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2945178194052715369}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 1503636806473218407}
+        m_TargetAssemblyTypeName: InterstitialAdsButton, Assembly-CSharp
+        m_MethodName: ShowAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -147,6 +148,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1503636806473218407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78130519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 024bd2843ab92a24f930536975d3600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidAdUnitId: Interstitial_Android
+  _iOsAdUnitId: Interstitial_iOS
 --- !u!1 &1549424284
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +387,7 @@ RectTransform:
   m_Children:
   - {fileID: 2322873500587294495}
   - {fileID: 2945178194052715375}
+  - {fileID: 7760793967553686713}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -999,7 +1015,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2945178194905066152
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1626,7 +1642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: -124.75001}
+  m_AnchoredPosition: {x: -1, y: -119}
   m_SizeDelta: {x: 190.16, y: 70.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2945178195728582951
@@ -1899,3 +1915,93 @@ MonoBehaviour:
   _showAdButton: {fileID: 3083490250523410008}
   _androidAdUnitId: Rewarded_Android
   _iOSAdUnitId: Rewarded_iOS
+--- !u!1001 &4307290683590969891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2322873499442721834}
+    m_Modifications:
+    - target: {fileID: 5797666474600572568, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_Name
+      value: Button Sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2083333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2083333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2083333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -399.99994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -224.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecdf9f23edece8c468232e04362d5166, type: 3}
+--- !u!4 &7760793967553686713 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5797666474600572570, guid: ecdf9f23edece8c468232e04362d5166,
+    type: 3}
+  m_PrefabInstance: {fileID: 4307290683590969891}
+  m_PrefabAsset: {fileID: 0}

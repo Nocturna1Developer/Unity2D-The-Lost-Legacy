@@ -88,7 +88,6 @@ GameObject:
   - component: {fileID: 654784795}
   - component: {fileID: 654784794}
   - component: {fileID: 654784793}
-  - component: {fileID: 654784792}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -224,21 +223,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &654784792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 654784790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d498622fc3ef4ee478b798feda5d004d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showAdButton: {fileID: 654784793}
-  _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &781267498
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +407,6 @@ GameObject:
   - component: {fileID: 1790558308}
   - component: {fileID: 1790558307}
   - component: {fileID: 1790558306}
-  - component: {fileID: 1790558305}
   m_Layer: 5
   m_Name: Reset
   m_TagString: Untagged
@@ -559,21 +542,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1790558305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790558303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d498622fc3ef4ee478b798feda5d004d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showAdButton: {fileID: 1790558306}
-  _androidAdUnitId: Rewarded_Android
-  _iOSAdUnitId: Rewarded_iOS
 --- !u!1 &2033481988
 GameObject:
   m_ObjectHideFlags: 0
