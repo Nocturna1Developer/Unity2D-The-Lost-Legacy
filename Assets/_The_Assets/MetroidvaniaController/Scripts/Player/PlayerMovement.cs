@@ -62,16 +62,30 @@ public class PlayerMovement : MonoBehaviour
 
 	// }
 
-	private void Awake()
-	{
-		horizontalMove = 0f;
-		verticalMove = 0f;
-	}
+	// private void Awake()
+	// {
+	// 	horizontalMove = _moveJumpjoystick.Horizontal * runSpeed;
+	// 	verticalMove = _moveJumpjoystick.Vertical;
+	// }
 
 	private void Update ()
 	{
+
 		horizontalMove = _moveJumpjoystick.Horizontal * runSpeed;
 		verticalMove = _moveJumpjoystick.Vertical;
+		
+		// if(_moveJumpjoystick.Horizontal >= .2f)
+		// {
+		// 	horizontalMove = runSpeed;
+		// }
+		// else if (_moveJumpjoystick.Horizontal <= -.2f)
+		// {
+		// 	horizontalMove = -runSpeed;
+		// }
+		// else
+		// {
+		// 	horizontalMove = 0f;
+		// }
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 

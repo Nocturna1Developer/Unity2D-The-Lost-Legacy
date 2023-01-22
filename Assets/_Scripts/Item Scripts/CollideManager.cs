@@ -42,10 +42,6 @@ public class CollideManager : MonoBehaviour, IGetHealthSystem
 
     private void Awake()
     {
-        // ADS PLACEMENT
-        //Banner.load();
-
-
         healthSystem = new HealthSystem(100);
         scene = SceneManager.GetActiveScene();
 
