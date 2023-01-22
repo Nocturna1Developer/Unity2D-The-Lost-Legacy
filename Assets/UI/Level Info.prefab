@@ -236,13 +236,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 157
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Want to do more Damage? Watch THis!
+  m_Text: Check this out!
 --- !u!114 &1549424286
 MonoBehaviour:
   m_ObjectHideFlags: 0

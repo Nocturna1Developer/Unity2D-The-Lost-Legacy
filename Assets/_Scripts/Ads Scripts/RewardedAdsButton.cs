@@ -26,14 +26,14 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     public void LoadAd()
     {
         // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
-        Debug.Log("Loading Ad: " + _adUnitId);
+        //Debug.Log("Loading Ad: " + _adUnitId);
         Advertisement.Load(_adUnitId, this);
     }
  
     // If the ad successfully loads, add a listener to the button and enable it:
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
-        Debug.Log("Ad Loaded: " + adUnitId);
+        //Debug.Log("Ad Loaded: " + adUnitId);
  
         if (adUnitId.Equals(_adUnitId))
         {
@@ -58,10 +58,10 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-            //Debug.Log("Unity Ads Rewarded Ad Completed");
+            Debug.Log("Unity Ads Rewarded Ad Completed");
             // Grant a reward.
             GameplayManager.instance.countdownTimer += 1;
-            //Debug.Log("REWARD HAS BEEN GRANTED");
+            Debug.Log("REWARD HAS BEEN GRANTED");
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);

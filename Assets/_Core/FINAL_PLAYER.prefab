@@ -5469,7 +5469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coinValue: 15
-  _maxScore: 1
+  _maxScore: 150
   _fungusDamage: 20
   _enemyDamage: 30
   _healAmount: 15

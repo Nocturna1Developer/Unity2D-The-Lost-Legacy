@@ -67,7 +67,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 4.66
+    value: 5.23
   threshold:
     overrideState: 1
     value: 1
@@ -88,7 +88,7 @@ MonoBehaviour:
     value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
     overrideState: 1
-    value: 0
+    value: 1
   dirtTexture:
     overrideState: 1
     value: {fileID: 0}
@@ -197,16 +197,16 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 1
+    value: -8
   tint:
     overrideState: 1
-    value: -7
+    value: 9
   colorFilter:
     overrideState: 1
-    value: {r: 0.58186185, g: 0.6365716, b: 0.9150943, a: 1}
+    value: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   hueShift:
     overrideState: 1
-    value: -28
+    value: -17
   saturation:
     overrideState: 1
     value: 100
@@ -251,7 +251,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0.4242255}
+    value: {x: 1, y: 1, z: 1, w: 0.07655495}
   gain:
     overrideState: 1
     value: {x: 1, y: 1, z: 1, w: 0.1779359}
@@ -1476,7 +1476,7 @@ MonoBehaviour:
     value: {x: 30.175571, y: 89.27481}
   minLuminance:
     overrideState: 1
-    value: -0
+    value: -0.4
   maxLuminance:
     overrideState: 1
     value: 6.9

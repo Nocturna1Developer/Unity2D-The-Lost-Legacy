@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 	public Animator animator;
 	public float runSpeed = 40f;
 	float horizontalMove = 0f;
+	float verticalMove = 0f;
 	bool jump = false;
 	bool dash = false;
 
@@ -61,10 +62,16 @@ public class PlayerMovement : MonoBehaviour
 
 	// }
 
+	private void Awake()
+	{
+		horizontalMove = 0f;
+		verticalMove = 0f;
+	}
+
 	private void Update ()
 	{
 		horizontalMove = _moveJumpjoystick.Horizontal * runSpeed;
-		float verticalMove = _moveJumpjoystick.Vertical;
+		verticalMove = _moveJumpjoystick.Vertical;
 
 		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
